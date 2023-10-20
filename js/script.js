@@ -21,8 +21,8 @@ $(function(){
    function contadorSlider(){
     /*FUNCTION QUE FAZ A CONTAGEM PARA A SELEÇÃO DE IMAGENS*/
      var temporizador = setInterval(function(){    
-            playSlider(cont);
-            cont++;
+            playSlider(cont)
+            cont++
             if(cont == 3)
                 cont = 0
             },delay)
