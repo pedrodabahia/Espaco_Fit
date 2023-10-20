@@ -23,8 +23,8 @@ $(function(){
      var temporizador = setInterval(function(){    
             playSlider(cont);
             cont++;
-            if(cont == 3);
-                cont = 0;
+            if(cont == 3)
+                cont = 0
             },delay)
     }
    
