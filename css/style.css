@@ -1,0 +1,764 @@
+*{
+padding:0;
+margin:0;
+font-family: "personal 1";
+}
+@font-face{
+    font-family:'personal 1';
+    src:url('../fonts/Bebas_Neue/font_personal.ttf');
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: rgb(150,150,150);
+    height:95vh;
+    background-image: url(../img/background-black.webp);
+    background-position: center;
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+header nav{
+    height:12vh;
+    display: flex;
+    align-items: center;
+    padding-top: 1vh;
+}
+header nav .logo{
+    height: 12vh;
+    width:17vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image:url(../img/IMG-4923.png);
+}
+header nav h3{
+    color: rgb(255, 255, 255);
+    font-size: 5vh;
+}
+.inscreva-se{
+    margin-top:20vh;
+    color: white;   
+}
+.inscreva-se h1{
+    font-size: 10vw;
+    letter-spacing:10px;
+    margin-bottom: 1vw;
+}
+.inscreva-se button{
+    width: 30vh;
+    height:10vh;
+    font-size:4vh;
+    color: white;
+    background-color: rgb(000, 100, 220);
+    box-shadow: 3px 6px 3px black;  
+    border: none;
+    cursor: pointer;
+}
+.inscreva-se button:active{
+    transition: scale(0.98);
+    border: 4px ridge  rgb(000, 100, 220);
+    box-shadow: 0px 2px 3px black;
+}
+hr.divisoria-1{
+    background-image: linear-gradient(to left, transparent,rgb(000,100,250),transparent);
+    height: 0.3vh;
+    border: none;
+    width: 80vw;
+    margin: 0 auto;
+}
+section.sobre-empresa{
+    background-image: url(../img/background-azul.jpg);
+    background-position: center;
+    background-size: 100% 110%;
+    height:95vh;
+    width:100%;
+}
+section.sobre-empresa .text-sobre{
+    width: 40%;
+    height: 100%;
+    display: block;
+    padding-left: 4vw;
+    padding-top:7vh;
+    color: white;
+}
+section.sobre-empresa .text-sobre h1{
+    font-size: 75px;
+}
+section.sobre-empresa .text-sobre p{
+    font-size: 25px;
+    width:30vw;
+}
+section.sobre-empresa .text-sobre a{
+    font-size: 25px;
+    color:white;
+    text-decoration:underline;
+}    
+section.sobre-empresa .banners-atletas{
+    width:55%;
+    height:65vh ;
+    float: right;
+    position: absolute;
+    top: 115vh;
+    left: 44vw;
+}
+section.sobre-empresa .img-atleta{
+    width:40%;
+    margin: 0 1%;
+    margin-top: -10%;
+    float: left;
+    height:100% ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow:1px 2px 4px rgba(000,100,250,0.5);    
+    border-radius: 1vw;
+}
+section.sobre-empresa .atleta2{
+    background-image: url(../img/img_history2.png);
+    margin-top:-3%;
+    display: inline-block;
+}
+section.sobre-empresa .atleta1{    
+    display: inline-block;
+    background-image: url(../img/img_history1.png);
+}
+section.serviços{
+    margin-top: -2%;
+    background-image: url(../img/background-black.webp);
+    background-position: center;
+    background-size: 100% 110%;
+    height:105vh;
+    width:100%;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+}
+
+section.serviços .title{
+    margin: 5vh auto;
+    font-size: 4vh;
+    height:25vh;
+    width: 90vw;
+}
+section.serviços .title h1{
+    font-size: 10vh;
+}
+section.serviços .imagens{
+    width: 80vw;
+    height: 65vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+section.serviços .imagens .contentImgs{
+    width: 200vw;
+    display: flex;
+    height: 100%;
+   
+ } 
+section.serviços .imagens .contentImgs .imagem{
+    width: calc(80vw / 3);
+    margin: 0 10px;
+    height: 100%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+section.serviços .imagens .contentImgs .imagem h2{
+    margin-top: 50%;
+    font-size:7vh ;
+    color: transparent;
+    transition:all 1s ease;
+}
+section.serviços .imagens .contentImgs .imagem:hover h2{
+    color: rgb(255, 255, 255);
+    transition-duration: 1s;    
+}
+
+section.serviços .imagens .contentImgs .img2{
+    background-image:url('../img/img_service2.jpg'); 
+    background-size: 120% 100%;
+    height:105%;
+    left:92.5vw;
+}  
+
+section.serviços .imagens .contentImgs  .img1{
+    background-image:url('../img/img_service1.jpg'); 
+    background-size: 150% 100%;
+    left: 2.5vw;
+    
+}  
+
+section.serviços .imagens .contentImgs  .img3{
+    background-image:url('../img/img_service3.jpg'); 
+    background-size: 120% 100%;
+    left:182.5vw
+}  
+    
+    section.serviços .imagens .contentImgs .imagem h2:last-child{
+      display: none;      
+
+        }   
+
+section.depoimentos{
+    margin-top: 0.5%;
+    background-image: url(../img/background-azul.jpg);
+    background-position: center;
+    background-size: 100% 110%;
+    height:110vh;
+    width:100%;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+}
+section.depoimentos .titulo{
+    font-size: 8vh;
+    padding: 2% 0;
+}
+    
+section.depoimentos .depoimentos-pessoas{
+    height:75vh;
+    width: 95%;
+    margin: 0 auto;
+}
+section.depoimentos .depoimentos-pessoas .content-conteudo{
+    height: 90%;
+    width:calc(94% / 3);
+    float: left;
+    background-color:rgb(0, 0, 0);
+    margin: 2% 1%;   
+}
+section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{
+    background-color:rgba(000,100,200,0.7);
+    width:100%;
+    text-align:center;
+    height:30.8%;
+    position: relative;
+    top: 60%;
+    font-size: 1.2vw;
+    padding: 5% 0;
+}
+section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo p{
+    width: 100%; 
+}
+section.formulario{
+    
+    margin-top: 0.5%;
+    position: relative;
+    background-image: url(../img/background-black.webp);
+    background-position: center;
+    background-size: 100% 110%;
+    height:105vh;
+    width:100%;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+}
+section.formulario .text {
+    position: absolute;
+    width: 30% ;
+    top:5%;
+    left: 10%;
+    font-size: 25px;
+    text-align: left;
+}
+section.formulario .text h2{
+    font-size: 75px;
+}
+section.formulario form.form-aula{
+    width: 450px;
+    height:700px;
+    position:relative;
+    top: 6%;
+    right: 15%;
+    float: right;
+    background-color: rgb(200,200,200);
+}
+section.formulario form.form-aula h2{
+    height:calc((100% / 6) - 10%);
+    padding:5%;
+    font-size: 35px;
+    background-color: rgb(124, 124, 124);
+}
+section.formulario form.form-aula .input-aula{
+    height:calc(100% / 6);
+    margin: 3% 0;     
+}
+section.formulario form.form-aula .input-aula label,section.formulario form.form-aula .input-aula input{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height:50%;
+    border: none;
+    padding: 1%;
+    padding-left: 3%;
+}
+section.formulario form.form-aula .input-aula input{
+    outline: none;
+    font-size: 17px;
+}
+section.formulario form.form-aula .input-aula label{
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: -4%;
+    margin-left: 12%;
+    font-size: 25px;
+}
+section.formulario form.form-aula .data,section.formulario form.form-aula  .tele{
+    width: 40%;
+    display: inline-block;
+    margin: 0 2%;
+}
+section.formulario form.form-aula .data input, .tele input{
+    text-align: center;
+}
+section.formulario form.form-aula input:valid{
+    outline:3px solid rgb(0, 100, 0);
+    border-radius: 2px;
+}
+section.formulario form.form-aula .data label,section.formulario form.form-aula  .tele label{
+    font-size: 25px;
+    margin-bottom: -10%;
+}
+
+section.formulario form.form-aula select {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height:50%;
+    border: none;
+    padding: 0.7%;
+    font-size: 17px;   
+}        
+section.formulario form.form-aula input[type=submit]{
+    height:calc((100% / 6) - 8%);
+    width:70%;
+    font-size: 20px;
+    background-color: rgb(000, 100, 220);
+    color:aliceblue;
+    border:none;
+    box-shadow: 3px 6px 3px black;  
+    outline: none;
+}
+section.formulario form.form-aula input[type=submit]:active{
+    transition: scale(0.98);
+    border: 4px ridge  rgb(000, 100, 220);
+    box-shadow: 0px 2px 3px black;
+}
+section.contato{
+    position: absolute;
+    height:17vh;
+    width: 100%;
+    background-color: rgb(000, 100, 220);
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+section.contato div{
+    display: inline-block;
+}
+section.contato div.titulo{
+    width: 30%;
+    text-align: left;
+    margin: 1% 0;
+    font-size: 23px;
+}
+section.contato div.meios-contato{
+    margin-top: 2%;
+    width: 60%;
+    float: right;
+    align-items: center;
+}
+section.contato div.meios-contato .informativo{
+    width: 30%;
+    margin: 0 1%;
+}
+section.contato-mobile{
+    position: absolute;
+    margin-top: 10vh;
+    height: 10vh;
+    width: 100%;
+    display: none;
+    text-align: center;
+    align-items: center;
+    background-color:  rgb(000, 100, 220);
+    color: aliceblue;
+    overflow: hidden;
+}
+section.contato-mobile .logo-final{
+    height: 150%;
+    width: 60%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: absolute;
+    left: 37%;
+    top: -20%;
+    opacity: 0.2;
+}
+
+section.contato-mobile .logo-final,section.contato-mobile h1{
+    display: inline-block;
+
+}
+section.contato-mobile h1{
+    font-size: 12vw;
+    position: absolute;
+    left: 27%;
+    top:12%;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 5px white;
+}
+/*Responsivo para o 
+/*Responsivo para o DESKTOP*/
+@media  screen and (max-width:990px) and (min-width:800px) {
+    section.sobre-empresa .text-sobre h1{
+        font-size: 9vw;
+    }
+    section.sobre-empresa .text-sobre p{
+        font-size: 2vw;
+    }
+    section.sobre-empresa .text-sobre a{
+        font-size: 2vw;
+    }    
+    section.sobre-empresa .text-sobre{
+        padding-top:11vh;
+    }
+    section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{
+        top: 64.5%;
+    }
+    section.formulario form.form-aula{
+        right: 2%;
+    }
+    section.formulario .text {
+        left: 2%;
+        font-size: 3vw;
+    }
+    section.formulario .text h2{
+        font-size: 9vw;
+    }
+}
+@media  screen and (max-width:800px) {
+    header nav h3{
+        font-size: 3vh;
+    }
+
+    section.sobre-empresa{
+        height:110vh;
+    }
+
+      section.sobre-empresa .text-sobre h1{
+        font-size: 6vh;
+    }
+    
+    section.sobre-empresa .text-sobre{
+        width: 90%;
+        margin: 0 auto;
+        margin-top:0;
+        height: 50vh;
+        text-align: center;
+    } 
+     section.sobre-empresa .text-sobre p,section.sobre-empresa .text-sobre a{
+        font-size:3vw;
+        width: 100%;     
+          
+    }
+    section.sobre-empresa .banners-atletas{
+        width:98%;
+        height: 50vh;
+        margin-top: -5vw;
+        position: static;               
+    }
+    section.sobre-empresa .img-atleta{
+        width: 45%;
+        margin-left: 2%;
+        box-shadow: none;
+    }
+    section.serviços .imagens{
+        height: 35vh;
+        margin: -10% 10%;
+        display: block;
+        width: 80%;
+    }
+    section.serviços .imagens .imagem{
+        width: 84%;
+        margin: 10% auto;
+    }
+
+    section.serviços .imagens .imagem h2:first-child{
+    float: left;  
+    margin-bottom: 30%; 
+    margin-left: 5%; 
+    }   
+    
+    section.serviços .imagens .imagem h2:last-child{
+        float: right;  
+        display: block;
+        margin-right: 5%;      
+        }   
+
+        
+section.serviços .imagens .img2 h2{
+    width: 50%;
+ }  
+  
+section.serviços .imagens .imagem h2{
+    margin-top: 0px;
+    display: block;
+ }  
+  
+    
+    section.serviços{
+        margin-top: -10%;
+        height: 150vh;
+    }
+
+    section.serviços .title h1{
+        font-size: 6vh;
+    }
+
+    section.serviços .title{
+        font-size: 3vh;
+    }
+
+    section.depoimentos{
+        margin-top: -1%;
+        height:220vh;
+    }
+    section.depoimentos .titulo{
+        font-size: 6vh;
+        padding: 10% 0;
+    }                                            
+    section.depoimentos .depoimentos-pessoas .content-conteudo{
+        height: 50vh;
+        width:60% ;
+        margin: 5% 20%;                         
+    }   
+    section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{                       
+        font-size: 2.5vw;           
+    }           
+    section.formulario form.form-aula{
+        display: inline-block;
+        width: 60vw;
+        height:99vh;
+        margin: 0 20vw;
+        background-color: rgb(200,200,200);
+    }
+    section.formulario form.form-aula .input-aula input{
+        outline: none;
+        font-size: 5vw;
+    }  
+    section.formulario form.form-aula h2{
+        font-size: 4.7vh;
+    }
+    section.formulario .text {
+        position: relative;
+        width: 80vw ;
+        top:5%;
+        margin: 4vw 14vw;
+        font-size: 4vw;
+    }          
+    section.formulario{
+        margin-top: -7%;
+        text-align: center;
+        height: 160vh;
+    }    
+    section.formulario form.form-aula select {
+        font-size: 5vw;
+    }    
+    section.formulario form.form-aula .input-aula label{
+        font-size: 4vw;
+    }   
+    section.formulario .text h2{
+        font-size: 6.5vh;
+    }
+    section.formulario form.form-aula .data label,section.formulario form.form-aula  .tele label{
+        font-size: 4vw;
+        margin-bottom: -10%;
+    }
+    section.formulario form.form-aula .data input{
+        font-size: 5vw;
+        margin-bottom: -10%;
+    }
+    section.formulario form.form-aula input[type=submit]{
+        font-size: 5vw;
+    }
+    section.formulario form.form-aula input[type=text],section.formulario form.form-aula input[type=email],section.formulario form.form-aula input[type=date],section.formulario form.form-aula input[type=tel],section.formulario form.form-aula select{
+        font-size: 3vw;
+    }
+    section.contato{
+        display: none;
+    }
+    section.contato-mobile{
+        display: block;
+    }
+  }
+
+
+
+
+
+@media  screen and (min-height:1079px) {
+    header nav h3{
+        font-size: 3vh;
+    }
+
+    section.sobre-empresa{
+        height:90vh;
+    }
+
+      section.sobre-empresa .text-sobre h1{
+        font-size: 6vh;
+    }
+    
+    section.sobre-empresa .text-sobre{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: -12vw;
+        height: 50vh;
+        text-align: center;
+    } 
+     section.sobre-empresa .text-sobre p,section.sobre-empresa .text-sobre a{
+        font-size:4vw;
+        width: 100%;     
+          
+    }
+    section.sobre-empresa .banners-atletas{
+        width:98%;
+        height: 40vh;
+        margin-top: -30vw;
+        position: static;               
+    }
+    section.sobre-empresa .img-atleta{
+        width: 45%;
+        margin-left: 2%;
+        box-shadow: none;
+    }
+    section.serviços .imagens{
+        height: 30vh;
+        margin: -10% 0;
+        display: block;
+        width: 100%;
+    }
+    section.serviços .imagens .contentImgs .imagem{
+        width: 84%;
+        margin: 10% auto;
+    }
+
+    section.serviços .imagens .contentImgs .imagem h2:first-child{
+    float: left;  
+    margin-bottom: 30%; 
+    margin-left: 5%; 
+    }   
+    
+    section.serviços .imagens .contentImgs .imagem h2:last-child{
+        float: right;  
+        display: block;
+        margin-right: 5%;      
+        }   
+
+   
+
+section.serviços .imagens .contentImgs .img2 h2{
+    width: 50%;
+ }  
+  
+section.serviços .imagens .contentImgs .imagem h2{
+    margin-top: 0px;
+    display: block;
+ }  
+  
+    
+    section.serviços{
+        margin-top: -10%;
+        height: 135vh;
+    }
+
+    section.serviços .title h1{
+        font-size: 6vh;
+    }
+
+    section.serviços .title{
+        font-size: 3vh;
+    }
+   section.serviços .imagens .contentImgs{
+    width: 200vw;
+    display: flex;
+    height: 100%;
+ }     
+    section.depoimentos{
+        margin-top: -1%;
+        height:180vh;
+    }
+    section.depoimentos .titulo{
+        font-size: 6vh;
+        padding: 10% 0;
+    }                                            
+    section.depoimentos .depoimentos-pessoas .content-conteudo{
+        height: 40vh;
+        width:84% ;
+        margin: 10% 8%;                         
+    }   
+    section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{                       
+        font-size: 4vw;           
+    }           
+    section.formulario form.form-aula{
+        display: inline-block;
+        width: 85vw;
+        height:80vh;
+        margin: 0 5vw;
+        background-color: rgb(200,200,200);
+    }
+    section.formulario form.form-aula .input-aula input{
+        outline: none;
+        font-size: 5vw;
+    }  
+    section.formulario form.form-aula h2{
+        font-size: 3.3vh;
+    }
+    section.formulario .text {
+        position: relative;
+        width: 80vw ;
+        top:5%;
+        margin: 4vw 5.7vw;
+        font-size: 5vw;
+    }          
+    section.formulario{
+        margin-top: -7%;
+        text-align: center;
+    }    
+    section.formulario form.form-aula select {
+        font-size: 5vw;
+    }    
+    section.formulario form.form-aula .input-aula label{
+        font-size: 6vw;
+    }   
+    section.formulario .text h2{
+        font-size: 5.5vh;
+    }
+    section.formulario form.form-aula .data label,section.formulario form.form-aula  .tele label{
+        font-size: 5vw;
+        margin-bottom: -10%;
+    }
+    section.formulario form.form-aula .data input{
+        font-size: 5vw;
+        margin-bottom: -10%;
+    }
+    section.formulario form.form-aula input[type=submit]{
+        font-size: 5vw;
+    }
+    section.contato{
+        display: none;
+    }
+    section.contato-mobile{
+        display: block;
+    }
+  }
+
+  
