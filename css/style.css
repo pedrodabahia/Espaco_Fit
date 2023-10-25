@@ -2,6 +2,7 @@
 padding:0;
 margin:0;
 font-family: "personal 1";
+user-select: none;
 }
 @font-face{
     font-family:'personal 1';
@@ -97,6 +98,12 @@ section.sobre-empresa .text-sobre a{
     color:white;
     text-decoration:underline;
 }    
+
+section.sobre-empresa .text-sobre a:hover{
+    color:rgb(000, 100, 220) ;
+    transition: 0.5s;
+}
+
 section.sobre-empresa .banners-atletas{
     width:55%;
     height:65vh ;
@@ -198,13 +205,38 @@ section.serviços .imagens .contentImgs  .img1{
 section.serviços .imagens .contentImgs  .img3{
     background-image:url('../img/img_service3.jpg'); 
     background-size: 120% 100%;
-    left:182.5vw
+    left:182.5vw;
 }  
     
     section.serviços .imagens .contentImgs .imagem h2:last-child{
       display: none;      
 
         }   
+section.serviços .imagens .contentImgs .textcomplement:first-child{
+    color: white;
+    margin-left: 5vw;
+    font-size: 17px;
+}
+section.serviços .imagens .contentImgs .textcomplement{
+display: none;
+font-size:2.8vh;
+}
+
+section.serviços .imagens .contentImgs .textcomplement p{
+    display: flex;
+    text-align: justify;
+    width: 75vw;
+    margin-top: 2vh;
+}
+
+section.serviços .imagens .contentImgs .textcomplement p:nth-child(1),section.serviços .imagens .contentImgs .textcomplement p:nth-child(2){
+    margin-left: 3.2vw;
+}
+section.serviços .imagens .contentImgs .textcomplement p:nth-child(3){
+    margin-left: 4vw;   
+}
+
+
 
 section.depoimentos{
     margin-top: 0.5%;
@@ -398,7 +430,7 @@ section.contato-mobile .logo-final{
     background-repeat: no-repeat;
     margin: 0 auto;
     position: absolute;
-    left: 37%;
+    left: 57%;
     top: -20%;
     opacity: 0.2;
 }
@@ -415,350 +447,128 @@ section.contato-mobile h1{
     letter-spacing: 2px;
     text-shadow: 0px 0px 5px white;
 }
-/*Responsivo para o 
-/*Responsivo para o DESKTOP*/
-@media  screen and (max-width:990px) and (min-width:800px) {
-    section.sobre-empresa .text-sobre h1{
-        font-size: 9vw;
+
+@media screen and (max-width:1314px) {
+    body{
+        background-color: white;
     }
+    header,section.sobre-empresa, section.serviços,section.depoimentos, section.formulario{
+        /*margin: 0 2vw;*/
+        margin-top: 2vw;
+        border-radius: 12px;
+        background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 3, 54),rgb(0, 0, 0));
+        width: 100%;
+        height: 95vh;
+        box-shadow: 0 0 6px black;
+    }
+    header{
+        margin: 0;
+        margin-top: 0;
+        width: 100%;
+        height: 100vh;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+  
+    section.sobre-empresa .text-sobre{
+        padding: 5vh 0;
+    }
+
+    section.sobre-empresa .text-sobre h1{
+        font-size: 10vh;
+
+    }
+
     section.sobre-empresa .text-sobre p{
-        font-size: 2vw;
+        font-size: 2.7vh;
+        width: 70%;
+        margin-left: 7vh;
+        text-align: justify;
+        display: block;
     }
     section.sobre-empresa .text-sobre a{
-        font-size: 2vw;
-    }    
-    section.sobre-empresa .text-sobre{
-        padding-top:11vh;
-    }
-    section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{
-        top: 64.5%;
-    }
-    section.formulario form.form-aula{
-        right: 2%;
-    }
-    section.formulario .text {
-        left: 2%;
-        font-size: 3vw;
-    }
-    section.formulario .text h2{
-        font-size: 9vw;
-    }
-}
-@media  screen and (max-width:800px) {
-    header nav h3{
         font-size: 3vh;
-    }
-
-    section.sobre-empresa{
-        height:110vh;
-    }
-
-      section.sobre-empresa .text-sobre h1{
-        font-size: 6vh;
-    }
-    
-    section.sobre-empresa .text-sobre{
-        width: 90%;
-        margin: 0 auto;
-        margin-top:0;
-        height: 50vh;
-        text-align: center;
-    } 
-     section.sobre-empresa .text-sobre p,section.sobre-empresa .text-sobre a{
-        font-size:3vw;
-        width: 100%;     
-          
-    }
-    section.sobre-empresa .banners-atletas{
-        width:98%;
-        height: 50vh;
-        margin-top: -5vw;
-        position: static;               
-    }
-    section.sobre-empresa .img-atleta{
-        width: 45%;
-        margin-left: 2%;
-        box-shadow: none;
-    }
-    section.serviços .imagens{
-        height: 35vh;
-        margin: -10% 10%;
         display: block;
-        width: 80%;
-    }
-    section.serviços .imagens .imagem{
-        width: 84%;
-        margin: 10% auto;
-    }
-
-    section.serviços .imagens .imagem h2:first-child{
-    float: left;  
-    margin-bottom: 30%; 
-    margin-left: 5%; 
-    }   
-    
-    section.serviços .imagens .imagem h2:last-child{
-        float: right;  
-        display: block;
-        margin-right: 5%;      
-        }   
-
+        margin-left: -45vh;
         
-section.serviços .imagens .img2 h2{
-    width: 50%;
- }  
-  
-section.serviços .imagens .imagem h2{
-    margin-top: 0px;
-    display: block;
- }  
-  
-    
-    section.serviços{
-        margin-top: -10%;
-        height: 150vh;
+    }
+    section.sobre-empresa .text-sobre, section.sobre-empresa .banners-atletas{
+            width: 90%;
+            height: 45%;
+            display: block;
+            overflow: hidden;
+            float:unset;
+            display: inline-block;
+            position: static;
+            margin: 0vw;
+            
+
     }
 
-    section.serviços .title h1{
-        font-size: 6vh;
-    }
-
-    section.serviços .title{
-        font-size: 3vh;
-    }
-
-    section.depoimentos{
-        margin-top: -1%;
-        height:220vh;
-    }
-    section.depoimentos .titulo{
-        font-size: 6vh;
-        padding: 10% 0;
-    }                                            
-    section.depoimentos .depoimentos-pessoas .content-conteudo{
-        height: 50vh;
-        width:60% ;
-        margin: 5% 20%;                         
-    }   
-    section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{                       
-        font-size: 2.5vw;           
-    }           
-    section.formulario form.form-aula{
-        display: inline-block;
-        width: 60vw;
-        height:99vh;
-        margin: 0 20vw;
-        background-color: rgb(200,200,200);
-    }
-    section.formulario form.form-aula .input-aula input{
-        outline: none;
-        font-size: 5vw;
-    }  
-    section.formulario form.form-aula h2{
-        font-size: 4.7vh;
-    }
-    section.formulario .text {
-        position: relative;
-        width: 80vw ;
-        top:5%;
-        margin: 4vw 14vw;
-        font-size: 4vw;
-    }          
-    section.formulario{
-        margin-top: -7%;
-        text-align: center;
-        height: 160vh;
-    }    
-    section.formulario form.form-aula select {
-        font-size: 5vw;
-    }    
-    section.formulario form.form-aula .input-aula label{
-        font-size: 4vw;
-    }   
-    section.formulario .text h2{
-        font-size: 6.5vh;
-    }
-    section.formulario form.form-aula .data label,section.formulario form.form-aula  .tele label{
-        font-size: 4vw;
-        margin-bottom: -10%;
-    }
-    section.formulario form.form-aula .data input{
-        font-size: 5vw;
-        margin-bottom: -10%;
-    }
-    section.formulario form.form-aula input[type=submit]{
-        font-size: 5vw;
-    }
-    section.formulario form.form-aula input[type=text],section.formulario form.form-aula input[type=email],section.formulario form.form-aula input[type=date],section.formulario form.form-aula input[type=tel],section.formulario form.form-aula select{
-        font-size: 3vw;
-    }
-    section.contato{
-        display: none;
-    }
-    section.contato-mobile{
-        display: block;
-    }
-  }
-
-
-
-
-
-@media  screen and (min-height:1079px) {
-    header nav h3{
-        font-size: 3vh;
-    }
-
-    section.sobre-empresa{
-        height:90vh;
-    }
-
-      section.sobre-empresa .text-sobre h1{
-        font-size: 6vh;
-    }
-    
-    section.sobre-empresa .text-sobre{
-        width: 90%;
-        margin: 0 auto;
-        margin-top: -12vw;
-        height: 50vh;
-        text-align: center;
-    } 
-     section.sobre-empresa .text-sobre p,section.sobre-empresa .text-sobre a{
-        font-size:4vw;
-        width: 100%;     
-          
-    }
     section.sobre-empresa .banners-atletas{
-        width:98%;
-        height: 40vh;
-        margin-top: -30vw;
-        position: static;               
-    }
-    section.sobre-empresa .img-atleta{
-        width: 45%;
-        margin-left: 2%;
-        box-shadow: none;
-    }
-    section.serviços .imagens{
-        height: 30vh;
-        margin: -10% 0;
-        display: block;
-        width: 100%;
-    }
-    section.serviços .imagens .contentImgs .imagem{
-        width: 84%;
-        margin: 10% auto;
-    }
-
-    section.serviços .imagens .contentImgs .imagem h2:first-child{
-    float: left;  
-    margin-bottom: 30%; 
-    margin-left: 5%; 
+        align-items: center;
+        text-align: center;
+        overflow: none;
     }   
-    
-    section.serviços .imagens .contentImgs .imagem h2:last-child{
-        float: right;  
-        display: block;
-        margin-right: 5%;      
-        }   
 
-   
+    section.sobre-empresa {
+        align-items: center;
+        text-align: center;
 
-section.serviços .imagens .contentImgs .img2 h2{
-    width: 50%;
- }  
-  
-section.serviços .imagens .contentImgs .imagem h2{
-    margin-top: 0px;
-    display: block;
- }  
-  
-    
-    section.serviços{
-        margin-top: -10%;
-        height: 135vh;
+    }
+    section.sobre-empresa .img-atleta:first-child{
+        margin-left: 9vw;
+    }
+    section.sobre-empresa .img-atleta:last-child{
+        margin-top: 2vw;
+        height:90% ;
     }
 
-    section.serviços .title h1{
-        font-size: 6vh;
+        section.serviços .imagens .contentImgs .imagem{
+            text-align: center;
+            box-shadow: 0 1px 2px rgb(125, 125, 125);
+
+    }
+    section.serviços .imagens .contentImgs .imagem h2{
+        color: rgb(255, 255, 255);
+        margin-top: 30%;
+    }
+    section.serviços .imagens .contentImgs .imagem:hover h2{
+        text-shadow: 0 0 20px rgb(000, 100, 220);
+    }
+
+    section.serviços .imagens{
+        box-sizing: border-box;
+        margin-top: -5vh;
+       
     }
 
     section.serviços .title{
-        font-size: 3vh;
+        margin-top: 0;
+        padding-top: 40px;
+        font-size: 2.7vw;
     }
-   section.serviços .imagens .contentImgs{
-    width: 200vw;
-    display: flex;
-    height: 100%;
- }     
-    section.depoimentos{
-        margin-top: -1%;
-        height:180vh;
-    }
-    section.depoimentos .titulo{
-        font-size: 6vh;
-        padding: 10% 0;
-    }                                            
-    section.depoimentos .depoimentos-pessoas .content-conteudo{
-        height: 40vh;
-        width:84% ;
-        margin: 10% 8%;                         
-    }   
-    section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{                       
-        font-size: 4vw;           
-    }           
-    section.formulario form.form-aula{
-        display: inline-block;
-        width: 85vw;
-        height:80vh;
-        margin: 0 5vw;
-        background-color: rgb(200,200,200);
-    }
-    section.formulario form.form-aula .input-aula input{
-        outline: none;
-        font-size: 5vw;
-    }  
-    section.formulario form.form-aula h2{
-        font-size: 3.3vh;
-    }
-    section.formulario .text {
-        position: relative;
-        width: 80vw ;
-        top:5%;
-        margin: 4vw 5.7vw;
-        font-size: 5vw;
-    }          
-    section.formulario{
-        margin-top: -7%;
-        text-align: center;
-    }    
-    section.formulario form.form-aula select {
-        font-size: 5vw;
-    }    
-    section.formulario form.form-aula .input-aula label{
-        font-size: 6vw;
-    }   
-    section.formulario .text h2{
-        font-size: 5.5vh;
-    }
-    section.formulario form.form-aula .data label,section.formulario form.form-aula  .tele label{
-        font-size: 5vw;
-        margin-bottom: -10%;
-    }
-    section.formulario form.form-aula .data input{
-        font-size: 5vw;
-        margin-bottom: -10%;
-    }
-    section.formulario form.form-aula input[type=submit]{
-        font-size: 5vw;
-    }
-    section.contato{
-        display: none;
-    }
-    section.contato-mobile{
-        display: block;
-    }
-  }
 
-  
+    section.serviços .title h1{
+        font-size: 10vw;
+    }
+    section.serviços .imagens .contentImgs .textcomplement{
+        display: flex;
+    
+        }
+    section.depoimentos{
+        
+    }
+
+    section.formulario{
+   
+        width: 100%;
+        margin: 2vw 0 0 0 ;
+        border-radius: 12px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+}
+
