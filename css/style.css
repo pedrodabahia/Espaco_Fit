@@ -93,10 +93,11 @@ section.sobre-empresa .text-sobre p{
     font-size: 25px;
     width:30vw;
 }
-section.sobre-empresa .text-sobre a{
+section.sobre-empresa .text-sobre p a{
     font-size: 25px;
     color:white;
     text-decoration:underline;
+    box-shadow: none;
 }    
 
 section.sobre-empresa .text-sobre a:hover{
@@ -219,12 +220,12 @@ section.serviços .imagens .contentImgs .textcomplement:first-child{
 }
 section.serviços .imagens .contentImgs .textcomplement{
 display: none;
-font-size:2.8vh;
+font-size:2vh;
 }
 
 section.serviços .imagens .contentImgs .textcomplement p{
     display: flex;
-    text-align: justify;
+    text-align: left;
     width: 75vw;
     margin-top: 2vh;
 }
@@ -483,14 +484,15 @@ section.contato-mobile h1{
     section.sobre-empresa .text-sobre p{
         font-size: 2.7vh;
         width: 70%;
-        margin-left: 7vh;
+        margin-left: 9vw;
         text-align: justify;
         display: block;
     }
-    section.sobre-empresa .text-sobre a{
+    section.sobre-empresa .text-sobre p a{
         font-size: 3vh;
         display: block;
-        margin-left: -45vh;
+      
+        
         
     }
     section.sobre-empresa .text-sobre, section.sobre-empresa .banners-atletas{
@@ -540,14 +542,16 @@ section.contato-mobile h1{
 
     section.serviços .imagens{
         box-sizing: border-box;
-        margin-top: -5vh;
+        margin-top: -5vw;
+   
        
     }
 
     section.serviços .title{
         margin-top: 0;
         padding-top: 40px;
-        font-size: 2.7vw;
+        font-size: 2.7vw;     
+        height: 40vw;
     }
 
     section.serviços .title h1{
