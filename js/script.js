@@ -46,7 +46,7 @@ $(function(){
         $('section.sobre-empresa .text-sobre p').css( 'font-size', '2vh').css( 'width','70%').css('margin-left',' 9vw;').css(' text-align','justify').css('display','block');
         $('section.sobre-empresa .text-sobre p a').css('font-size','2vh').css('display',' block').css('float','left')
         $('section.sobre-empresa .text-sobre, section.sobre-empresa .banners-atletas').css('width','90%').css('height','45%').css('display','block;').css('overflow',' hidden').css('float','unset').css('display','inline-block').css('position','static').css('margin','0vw');
-        $('section.sobre-empresa .text-sobre').css('height', '50vw');
+        $('section.sobre-empresa .text-sobre').css('height', '53vw');
         $('section.sobre-empresa .banners-atletas').css('align-items','center').css('text-align','center').css('overflow','none');
         $('section.sobre-empresa ').css('align-items','center').css('text-align','center');
         $('section.sobre-empresa .img-atleta:first-child').css('margin-left','9vw');
