@@ -449,7 +449,7 @@ section.contato-mobile h1{
     text-shadow: 0px 0px 5px white;
 }
 
-@media screen and (max-width:1314px) {
+@media screen and (max-width:600px) {
     body{
         background-color: white;
     }
@@ -457,10 +457,11 @@ section.contato-mobile h1{
         /*margin: 0 2vw;*/
         margin-top: 2vw;
         border-radius: 12px;
-        background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 3, 54),rgb(0, 0, 0));
         width: 100%;
         height: 95vh;
         box-shadow: 0 0 6px black;
+        background-image: none;
+        background-color: rgb(0, 0, 20);
     }
     header{
         margin: 0;
@@ -469,22 +470,24 @@ section.contato-mobile h1{
         height: 100vh;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+        background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 3, 54),rgb(0, 0, 0));
     }
 
   
     section.sobre-empresa .text-sobre{
-        padding: 5vh 0;
+        padding: 5vw 0;
+        text-shadow: 0 1vw 3vw rgb(000, 141, 207);
     }
 
     section.sobre-empresa .text-sobre h1{
         font-size: 10vh;
-
+        
     }
 
     section.sobre-empresa .text-sobre p{
-        font-size: 2.7vh;
+        font-size: 10vw;
         width: 70%;
-        margin-left: 9vw;
+        margin:5vw 0 2vw 9vw;
         text-align: justify;
         display: block;
     }
@@ -506,10 +509,13 @@ section.contato-mobile h1{
             margin: 0vw;
             
 
+    }  section.sobre-empresa .text-sobre {
+        font-size: 10vw;
+        margin:5vw 0 2vw 9vw;
+        text-align: justify;
+        height:auto;
     }
-  section.sobre-empresa .text-sobre{
-      height:53vw
-  }
+
     section.sobre-empresa .banners-atletas{
         align-items: center;
         text-align: center;
@@ -554,10 +560,16 @@ section.contato-mobile h1{
         padding-top: 40vw;
         font-size: 2.7vw;     
         height: 40vw;
+        text-shadow: 0 1vw 3vw rgb(000, 141, 207);
+    }
+    section.serviços .title p{
+        font-size: 4.5vw;
     }
 
     section.serviços .title h1{
         font-size: 10vw;
+        text-decoration: underline;
+        text-shadow: 0 0vw 3vw rgb(000, 141, 207);
     }
     section.serviços .imagens .contentImgs .textcomplement{
         display: flex;
