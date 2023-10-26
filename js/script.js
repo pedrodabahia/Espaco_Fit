@@ -40,8 +40,8 @@ $(function(){
         $('.contentImgs').attr('style','display:block; width : 279vw;height:60vh;');
         $('.imagens').attr('style',' overflow-y : hidden ; overflow-x : hidden; height:60vh;text-align:left;width:80vw; margin-left:-3vw;display:inline-block');
         $('body').css('background-color','white');
-        $('header,section.sobre-empresa, section.serviços,section.depoimentos, section.formulario').css('margin-top','2vw').css('border-radius','12px').css('width','100%').css('height','95vh').css('box-shadow','0 0 6px black');
-        $('header').css('margin','0').css(' margin-top','0').css('width','100%').css('height','100vh').css(' border-top-left-radius','0').css('border-top-right-radius','0')
+        $('header,section.sobre-empresa, section.serviços,section.depoimentos, section.formulario').css('margin-top','2vw').css('border-radius','12px').css('width','100%').css('height','95vh').css('box-shadow','0 0 6px black').css('background-image','none').css('background-color','rgb(0, 0, 20)');
+        $('header').css('margin','0').css(' margin-top','0').css('width','100%').css('height','100vh').css(' border-top-left-radius','0').css('border-top-right-radius','0').css('background-image','linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 3, 54),rgb(0, 0, 0))');
         
         
         $('section.sobre-empresa .text-sobre h1').css('font-size','10vw');
