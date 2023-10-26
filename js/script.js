@@ -45,10 +45,10 @@ $(function(){
         
         
         $('section.sobre-empresa .text-sobre h1').css('font-size','10vw');
-        $('section.sobre-empresa .text-sobre p').css( 'font-size', '2vh').css( 'width','70%').css('margin',' 0 vw;').css('text-align','center').css('display','block');
-        $('section.sobre-empresa .text-sobre p a').css('font-size','2vh')
+        $('section.sobre-empresa .text-sobre p').css( 'font-size', '2vh').css( 'width','70%').css('margin',' 0').css('text-align','center').css('display','block');
+        $('section.sobre-empresa .text-sobre p a').css('font-size','2vh');
         $('section.sobre-empresa .text-sobre, section.sobre-empresa .banners-atletas').css('width','90%').css('height','45%').css('display','block;').css('overflow',' hidden').css('float','unset').css('display','inline-block').css('position','static').css('margin','9vw')
-        $('section.sobre-empresa .text-sobre').css('padding', '5vh 0 0 0').css('height','auto').css('text-align','center').css('margin','2vw auto 0 auto');
+        $('section.sobre-empresa .text-sobre').css('padding', '5vh 0 0 0').css('height','auto').css('text-align','center').css('margin','2vw 5% 0 5%').css('text-shadow',' 0 1vw 3vw rgb(000,)');
         $('section.sobre-empresa .banners-atletas').css('align-items','center').css('text-align','center').css('overflow','none').css('margin','2vw 0 0 0 ');
        
         $('section.sobre-empresa ').css('align-items','center').css('text-align','center');
@@ -60,7 +60,7 @@ $(function(){
         $('section.serviços .imagens .contentImgs .imagem h2').css('color','white');
         $('section.serviços .imagens .contentImgs .imagem:hover h2').css('text-shadow','0 0 20px rgb(000, 100, 220)');
         $('section.serviços .imagens').css('box-sizing','border-box').css('margin-top','-5vh');
-        $('section.serviços .title').css('margin-top','0').css('padding-top','14vw').css('font-size','4vw').css(' height','40vw');
+        $('section.serviços .title').css('margin-top','0').css('padding-top','14vw').css('font-size','4vw').css(' height','40vw').css('text-shadow',' 0 1vw 3vw rgb(000, 141, 207)');
         $('section.serviços .title h1').css('font-size','13vw');
         $('section.serviços .imagens .contentImgs .textcomplement').css('display','flex');
        
