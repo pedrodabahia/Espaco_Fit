@@ -1,105 +1,578 @@
-$(function(){
-    //O SLIDER FOI UMA SOLUÇÃO MOBILE FEITA PARA MELHORAR A VISIBILIDADE DO SITE EM DISPOSITIVOS MOBILES
-    //DESENVOLVEDOR: PEDRO MATOS.
-    //BIBLIOTECA: JQUERY.
-    //LINGUAGEM: JAVASCRIPT.
-    var cont = 0;
-    var delay = 6000;
-
-    /*CHAMADA DA FUNCTION PRINCIPAL, HERDANDO OS VALORES DE ALTURA E LARGURA DA TELA DO USUARIO*/
-    
-    
-    
-
-   function contadorSlider(){
-    /*FUNCTION QUE FAZ A CONTAGEM PARA A SELEÇÃO DE IMAGENS*/
-     var temporizador = setInterval(function(){    
-            playSlider(cont);
-            cont++;
-            if(cont == 3)
-                cont = 0
-            },delay)
-           
-    }
-   
-
-    function playSlider(cont){
-        /*FUNCTION QUE FAZ A TROCA DE IMAGENS NO SLIDE*/
-        var imagemVisible =  $('.imagem').eq(cont).offset().left - $('.contentImgs').offset().left;
-        $('.imagens').animate({'scrollLeft':imagemVisible-20+"px"});
-        console.log("lado esquerdo da imagem: "+$('.imagem').eq(cont).offset().left );
-        console.log("Posiçao do scrollBar: "+$('.imagens').scrollLeft());
-        console.log(cont);
-    }
-
-    function formatedSlider(){
-        /*FUNCTION QUE FORMATA OS ESTILOS DA DI IMAGENS DE ACORDO COM O TAMANHOO DA TELA*/
-        $('.serviços').attr('style','height: 95vh');
-        $('.imagem').attr('style','width : 75vw;height:40vh; display : inline-block;margin-left:3vw;margin-top:6px;border-left: 3vw solid white;box-sizing:border-box');
-        $('.contentImgs').attr('style','display:block; width : 279vw;height:60vh;');
-        $('.imagens').attr('style',' overflow-y : hidden ; overflow-x : hidden; height:60vh;text-align:left;width:80vw; margin-left:-3vw;display:inline-block');
-        $('body').css('background-color','white');
-        $('header,section.sobre-empresa, section.serviços,section.depoimentos, section.formulario').css('margin-top','2vw').css('border-radius','12px').css('background-image','linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 3, 54),rgb(0, 0, 0))').css('width','100%').css('height','95vh').css('box-shadow','0 0 6px black');
-        $('header').css('margin','0').css(' margin-top','0').css('width','100%').css('height','100vh').css(' border-top-left-radius','0').css('border-top-right-radius','0')
-        $('section.sobre-empresa .text-sobre').css('padding', '5vh 0 0 0');
-        $('section.sobre-empresa .text-sobre h1').css('font-size','10vw');
-        $('section.sobre-empresa .text-sobre p').css( 'font-size', '2vh').css( 'width','70%').css('margin-left',' 9vw;').css(' text-align','justify').css('display','block');
-        $('section.sobre-empresa .text-sobre p a').css('font-size','2vh').css('display',' block').css('float','left')
-        $('section.sobre-empresa .text-sobre, section.sobre-empresa .banners-atletas').css('width','90%').css('height','45%').css('display','block;').css('overflow',' hidden').css('float','unset').css('display','inline-block').css('position','static').css('margin','0vw');
-        $('section.sobre-empresa .text-sobre').css('height', '50vw');
-        $('section.sobre-empresa .banners-atletas').css('align-items','center').css('text-align','center').css('overflow','none');
-        $('section.sobre-empresa ').css('align-items','center').css('text-align','center');
-        $('section.sobre-empresa .img-atleta:first-child').css('margin-left','9vw');
-        $('section.sobre-empresa .img-atleta:last-child').css('margin-top','2vw').css('height','90%');
-        $('section.serviços .imagens .contentImgs .imagem').css('text-align','center').css('border-shadow','0 1px 2px rgb(125, 125, 125)');
-        $('section.serviços .imagens .contentImgs .imagem h2').css('color','white');
-        $('section.serviços .imagens .contentImgs .imagem:hover h2').css('text-shadow','0 0 20px rgb(000, 100, 220)');
-        $('section.serviços .imagens').css('box-sizing','border-box').css('margin-top','-5vh');
-        $('section.serviços .title').css('margin-top','0').css('padding-top','14vw').css('font-size','4vw').css(' height','40vw');
-        $('section.serviços .title h1').css('font-size','13vw');
-        $('section.serviços .imagens .contentImgs .textcomplement').css('display','flex');
-        //$('section.depoimentos').css('','')
-        $('section.formulario').css('width','100%').css('margin','2vw 0 0 0').css('border-radius','12px').css('border-bottom-left-radius','0').css('border-bottom-right-radius','0');
-    /*    $('').css('','')
-        $('').css('','')
-        $('').css('','')
-        $('').css('','')
-        $('').css('','')
-        $('').css('','')
-        $('').css('','')
-        $('').css('','')
-        $('').css('','')
-        $('').css('','')
-        $('').css('','')
-        $('').css('','')
-        $('').css('','')
-        $('').css('','')*/
+*{
+padding:0;
+margin:0;
+font-family: "personal 1";
+user-select: none;
+}
+@font-face{
+    font-family:'personal 1';
+    src:url('../fonts/Bebas_Neue/font_personal.ttf');
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
 }
 
-    function resetPainel(){
-        /*FUNCTION QUE RESETA OS TAMANHOS PARA OS VALORES ORIGINAIS*/
-        $(".contentImgs").removeAttr('style');
-        $(".imagem").removeAttr('style');
-        $(".imagens").removeAttr('style');
-    }
+header{
+    background-color: rgb(150,150,150);
+    height:95vh;
+    background-image: url(../img/background-black.webp);
+    background-position: center;
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+header nav{
+    height:12vh;
+    display: flex;
+    align-items: center;
+    padding-top: 1vh;
+}
+header nav .logo{
+    height: 12vh;
+    width:17vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image:url(../img/IMG-4923.png);
+}
+header nav h3{
+    color: rgb(255, 255, 255);
+    font-size: 5vh;
+}
+.inscreva-se{
+    margin-top:20vh;
+    color: white;   
+}
+.inscreva-se h1{
+    font-size: 10vw;
+    letter-spacing:10px;
+    margin-bottom: 1vw;
+}
+.inscreva-se button{
+    width: 30vh;
+    height:10vh;
+    font-size:4vh;
+    color: white;
+    background-color: rgb(000, 100, 220);
+    box-shadow: 3px 6px 3px black;  
+    border: none;
+    cursor: pointer;
+}
+.inscreva-se button:active{
+    transition: scale(0.98);
+    border: 4px ridge  rgb(000, 100, 220);
+    box-shadow: 0px 2px 3px black;
+}
+hr.divisoria-1{
+    background-image: linear-gradient(to left, transparent,rgb(000,100,250),transparent);
+    height: 0.3vh;
+    border: none;
+    width: 80vw;
+    margin: 0 auto;
+}
+section.sobre-empresa{
+    background-image: url(../img/background-azul.jpg);
+    background-position: center;
+    background-size: 100% 110%;
+    height:95vh;
+    width:100%;
+}
+section.sobre-empresa .text-sobre{
+    width: 40%;
+    height: 100%;
+    display: block;
+    padding-left: 4vw;
+    padding-top:7vh;
+    color: white;
+}
+section.sobre-empresa .text-sobre h1{
+    font-size: 75px;
+}
+section.sobre-empresa .text-sobre p{
+    font-size: 25px;
+    width:30vw;
+}
+section.sobre-empresa .text-sobre p a{
+    font-size: 25px;
+    color:white;
+    text-decoration:underline;
+    box-shadow: none;
+}    
 
+section.sobre-empresa .text-sobre a:hover{
+    color:rgb(000, 100, 220) ;
+    transition: 0.5s;
+}
 
+section.sobre-empresa .banners-atletas{
+    width:55%;
+    height:65vh ;
+    float: right;
+    position: absolute;
+    top: 115vh;
+    left: 44vw;
+}
+section.sobre-empresa .img-atleta{
+    width:40%;
+    margin: 0 1%;
+    margin-top: -10%;
+    float: left;
+    height:100% ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow:1px 2px 4px rgba(000,100,250,0.5);    
+    border-radius: 1vw;
+}
+section.sobre-empresa .atleta2{
+    background-image: url(../img/img_history2.png);
+    margin-top:-3%;
+    display: inline-block;
+}
+section.sobre-empresa .atleta1{    
+    display: inline-block;
+    background-image: url(../img/img_history1.png);
+}
+section.serviços{
+    margin-top: -2%;
+    background-image: url(../img/background-black.webp);
+    background-position: center;
+    background-size: 100% 110%;
+    height:105vh;
+    width:100%;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+}
 
-   function slider(larguraWin, alturaWin){
-        /*FUNCTION PRINCIPAL, QUE REALIZA AS CHAMADAS DE ACORDO COM O TAMANHO DA TELA DO USUARIO*/
-        if(larguraWin < alturaWin){
-            formatedSlider();
-            contadorSlider();
-            playSlider();
-        }else{
-            resetPainel();  
-        }
-        console.log("conte")
-    }
+section.serviços .title{
+    margin: 5vh auto;
+    font-size: 4vh;
+    height:25vh;
+    width: 90vw;
+}
+section.serviços .title h1{
+    font-size: 10vh;
+}
+section.serviços .imagens{
+    width: 80vw;
+    height: 65vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+section.serviços .imagens .contentImgs{
+    width: 200vw;
+    display: flex;
+    height: 100%;
+   
+ } 
+section.serviços .imagens .contentImgs .imagem{
+    width: calc(80vw / 3);
+    margin: 0 10px;
+    height: 100%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+}
+section.serviços .imagens .contentImgs .imagem h2{
+    margin-top: 50%;
+    font-size:7vh ;
+    color: transparent;
+    transition:all 1s ease;
+}
+section.serviços .imagens .contentImgs .imagem:hover h2{
+    color: rgb(255, 255, 255);
+    transition-duration: 1s;    
+}
+
+section.serviços .imagens .contentImgs .img2{
+    background-image:url('../img/img_service2.jpg'); 
+    background-size: 120% 100%;
+    height:105%;
+    left:92.5vw;
+}  
+
+section.serviços .imagens .contentImgs  .img1{
+    background-image:url('../img/img_service1.jpg'); 
+    background-size: 150% 100%;
+    left: 2.5vw;
     
-    slider($(window).width(),$(window).height())
-   window.addEventListener('resize',() =>{
-    slider($(window).width(),$(window).height())
-   })
+}  
 
-})
+section.serviços .imagens .contentImgs  .img3{
+    background-image:url('../img/img_service3.jpg'); 
+    background-size: 120% 100%;
+    left:182.5vw;
+}  
+    
+    section.serviços .imagens .contentImgs .imagem h2:last-child{
+      display: none;      
+
+        }   
+section.serviços .imagens .contentImgs .textcomplement:first-child{
+    color: white;
+    margin-left: 5vw;
+    font-size: 17px;
+}
+section.serviços .imagens .contentImgs .textcomplement{
+display: none;
+font-size:2vh;
+}
+
+section.serviços .imagens .contentImgs .textcomplement p{
+    display: flex;
+    text-align: left;
+    width: 75vw;
+    margin-top: 2vh;
+}
+
+section.serviços .imagens .contentImgs .textcomplement p:nth-child(1),section.serviços .imagens .contentImgs .textcomplement p:nth-child(2){
+    margin-left: 3.2vw;
+}
+section.serviços .imagens .contentImgs .textcomplement p:nth-child(3){
+    margin-left: 4vw;   
+}
+
+
+
+section.depoimentos{
+    margin-top: 0.5%;
+    background-image: url(../img/background-azul.jpg);
+    background-position: center;
+    background-size: 100% 110%;
+    height:110vh;
+    width:100%;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+}
+section.depoimentos .titulo{
+    font-size: 8vh;
+    padding: 2% 0;
+}
+    
+section.depoimentos .depoimentos-pessoas{
+    height:75vh;
+    width: 95%;
+    margin: 0 auto;
+}
+section.depoimentos .depoimentos-pessoas .content-conteudo{
+    height: 90%;
+    width:calc(94% / 3);
+    float: left;
+    background-color:rgb(0, 0, 0);
+    margin: 2% 1%;   
+}
+section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{
+    background-color:rgba(000,100,200,0.7);
+    width:100%;
+    text-align:center;
+    height:30.8%;
+    position: relative;
+    top: 60%;
+    font-size: 1.2vw;
+    padding: 5% 0;
+}
+section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo p{
+    width: 100%; 
+}
+section.formulario{
+    
+    margin-top: 0.5%;
+    position: relative;
+    background-image: url(../img/background-black.webp);
+    background-position: center;
+    background-size: 100% 110%;
+    height:105vh;
+    width:100%;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+}
+section.formulario .text {
+    position: absolute;
+    width: 30% ;
+    top:5%;
+    left: 10%;
+    font-size: 25px;
+    text-align: left;
+}
+section.formulario .text h2{
+    font-size: 75px;
+}
+section.formulario form.form-aula{
+    width: 450px;
+    height:700px;
+    position:relative;
+    top: 6%;
+    right: 15%;
+    float: right;
+    background-color: rgb(200,200,200);
+}
+section.formulario form.form-aula h2{
+    height:calc((100% / 6) - 10%);
+    padding:5%;
+    font-size: 35px;
+    background-color: rgb(124, 124, 124);
+}
+section.formulario form.form-aula .input-aula{
+    height:calc(100% / 6);
+    margin: 3% 0;     
+}
+section.formulario form.form-aula .input-aula label,section.formulario form.form-aula .input-aula input{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height:50%;
+    border: none;
+    padding: 1%;
+    padding-left: 3%;
+}
+section.formulario form.form-aula .input-aula input{
+    outline: none;
+    font-size: 17px;
+}
+section.formulario form.form-aula .input-aula label{
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: -4%;
+    margin-left: 12%;
+    font-size: 25px;
+}
+section.formulario form.form-aula .data,section.formulario form.form-aula  .tele{
+    width: 40%;
+    display: inline-block;
+    margin: 0 2%;
+}
+section.formulario form.form-aula .data input, .tele input{
+    text-align: center;
+}
+section.formulario form.form-aula input:valid{
+    outline:3px solid rgb(0, 100, 0);
+    border-radius: 2px;
+}
+section.formulario form.form-aula .data label,section.formulario form.form-aula  .tele label{
+    font-size: 25px;
+    margin-bottom: -10%;
+}
+
+section.formulario form.form-aula select {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height:50%;
+    border: none;
+    padding: 0.7%;
+    font-size: 17px;   
+}        
+section.formulario form.form-aula input[type=submit]{
+    height:calc((100% / 6) - 8%);
+    width:70%;
+    font-size: 20px;
+    background-color: rgb(000, 100, 220);
+    color:aliceblue;
+    border:none;
+    box-shadow: 3px 6px 3px black;  
+    outline: none;
+}
+section.formulario form.form-aula input[type=submit]:active{
+    transition: scale(0.98);
+    border: 4px ridge  rgb(000, 100, 220);
+    box-shadow: 0px 2px 3px black;
+}
+section.contato{
+    position: absolute;
+    height:17vh;
+    width: 100%;
+    background-color: rgb(000, 100, 220);
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+section.contato div{
+    display: inline-block;
+}
+section.contato div.titulo{
+    width: 30%;
+    text-align: left;
+    margin: 1% 0;
+    font-size: 23px;
+}
+section.contato div.meios-contato{
+    margin-top: 2%;
+    width: 60%;
+    float: right;
+    align-items: center;
+}
+section.contato div.meios-contato .informativo{
+    width: 30%;
+    margin: 0 1%;
+}
+section.contato-mobile{
+    position: absolute;
+    margin-top: 10vh;
+    height: 10vh;
+    width: 100%;
+    display: none;
+    text-align: center;
+    align-items: center;
+    background-color:  rgb(000, 100, 220);
+    color: aliceblue;
+    overflow: hidden;
+}
+section.contato-mobile .logo-final{
+    height: 150%;
+    width: 60%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: absolute;
+    left: 57%;
+    top: -20%;
+    opacity: 0.2;
+}
+
+section.contato-mobile .logo-final,section.contato-mobile h1{
+    display: inline-block;
+
+}
+section.contato-mobile h1{
+    font-size: 12vw;
+    position: absolute;
+    left: 27%;
+    top:12%;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 5px white;
+}
+
+@media screen and (max-width:1314px) {
+    body{
+        background-color: white;
+    }
+    header,section.sobre-empresa, section.serviços,section.depoimentos, section.formulario{
+        /*margin: 0 2vw;*/
+        margin-top: 2vw;
+        border-radius: 12px;
+        background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 3, 54),rgb(0, 0, 0));
+        width: 100%;
+        height: 95vh;
+        box-shadow: 0 0 6px black;
+    }
+    header{
+        margin: 0;
+        margin-top: 0;
+        width: 100%;
+        height: 100vh;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+  
+    section.sobre-empresa .text-sobre{
+        padding: 5vh 0;
+    }
+
+    section.sobre-empresa .text-sobre h1{
+        font-size: 10vh;
+
+    }
+
+    section.sobre-empresa .text-sobre p{
+        font-size: 2.7vh;
+        width: 70%;
+        margin-left: 9vw;
+        text-align: justify;
+        display: block;
+    }
+    section.sobre-empresa .text-sobre p a{
+        font-size: 3vh;
+        display: block;
+      
+        
+        
+    }
+    section.sobre-empresa .text-sobre, section.sobre-empresa .banners-atletas{
+            width: 90%;
+            height: 45%;
+            display: block;
+            overflow: hidden;
+            float:unset;
+            display: inline-block;
+            position: static;
+            margin: 0vw;
+            
+
+    }
+
+    section.sobre-empresa .banners-atletas{
+        align-items: center;
+        text-align: center;
+        overflow: none;
+    }   
+
+    section.sobre-empresa {
+        align-items: center;
+        text-align: center;
+
+    }
+    section.sobre-empresa .img-atleta:first-child{
+        margin-left: 9vw;
+    }
+    section.sobre-empresa .img-atleta:last-child{
+        margin-top: 2vw;
+        height:90% ;
+    }
+
+        section.serviços .imagens .contentImgs .imagem{
+            text-align: center;
+            box-shadow: 0 1px 2px rgb(125, 125, 125);
+
+    }
+    section.serviços .imagens .contentImgs .imagem h2{
+        color: rgb(255, 255, 255);
+        margin-top: 30%;
+    }
+    section.serviços .imagens .contentImgs .imagem:hover h2{
+        text-shadow: 0 0 20px rgb(000, 100, 220);
+    }
+
+    section.serviços .imagens{
+        box-sizing: border-box;
+        margin-top: -5vw;
+   
+       
+    }
+
+    section.serviços .title{
+        margin-top: 0;
+        padding-top: 40vw;
+        font-size: 2.7vw;     
+        height: 40vw;
+    }
+
+    section.serviços .title h1{
+        font-size: 10vw;
+    }
+    section.serviços .imagens .contentImgs .textcomplement{
+        display: flex;
+    
+        }
+    section.depoimentos{
+        
+    }
+
+    section.formulario{
+   
+        width: 100%;
+        margin: 2vw 0 0 0 ;
+        border-radius: 12px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+}
+
