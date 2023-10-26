@@ -507,7 +507,9 @@ section.contato-mobile h1{
             
 
     }
-
+  section.sobre-empresa .text-sobre{
+      height:53vw
+  }
     section.sobre-empresa .banners-atletas{
         align-items: center;
         text-align: center;
