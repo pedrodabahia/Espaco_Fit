@@ -1,0 +1,420 @@
+*{
+padding:0;
+margin:0;
+font-family: "personal 1";
+user-select: none;
+}
+@font-face{
+    font-family:'personal 1';
+    src:url('../fonts/Bebas_Neue/font_personal.ttf');
+}
+@font-face {
+    font-family:'font para texto' ;
+    src: url('../fonts/Quicksand/Quicksand.ttf');
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: rgb(150,150,150);
+    height:100vh;
+    background-image: url(../img/background-black.webp);
+    background-position: center;
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+header nav{
+    height:12vh;
+    display: flex;
+    align-items: center;
+    padding-top: 1vh;
+}
+header nav .logo{
+    height: 12vh;
+    width:17%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image:url(../img/IMG-4923.png);
+}
+header nav h3{
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+}
+.inscreva-se{
+    margin: auto;
+    margin-top:10%;
+    color: white;
+    height: 50%;
+    width: 90%;   
+}
+.inscreva-se h1{
+    font-size: 10vw;
+    letter-spacing:10px;
+    margin-bottom: 1%;
+}
+.inscreva-se button{
+    width: 30%;
+    height:20%;
+    font-size:3vw;
+    color: white;
+    background-color: rgb(000, 100, 220);
+    box-shadow: 3px 6px 3px black;  
+    border: none;
+    cursor: pointer;
+}
+.inscreva-se button:active{
+    transition: scale(0.98);
+    border: 0.5% ridge  rgb(000, 100, 220);
+    box-shadow: 0px 2px 3px black;
+    
+}
+hr.divisoria-1{
+    background-image: linear-gradient(to left, transparent,rgb(000,100,250),transparent);
+    height: 0.3vh;
+    border: none;
+    width: 80%;
+    margin: 0 auto;
+}
+section.sobre-empresa{
+    background-image: url(../img/background-azul.jpg);
+    background-position: center;
+    background-size: 100% 110%;
+    height:auto;
+    padding: 6vw 0;
+    width:100%;
+}
+section.sobre-empresa .text-sobre{
+    width: 80% ;
+    height: 70%;
+    display: block;
+    padding-left: 4%;
+    padding-top:0vw;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+section.sobre-empresa .text-sobre h1{
+    font-size: 5vw;
+    width: 30%;
+    padding: 3vw 0;
+    margin: 0 30% ;
+}
+section.sobre-empresa .text-sobre p{
+    font-size: 1.6vw;
+    width:100%;
+    text-align: justify;
+    margin: 1% 0;
+    font-family: 'font para texto';
+   
+}
+
+section.sobre-empresa .slide-Historia{
+    height:30vw;
+    width:45vw;
+    margin: 5% 22%;
+    overflow:hidden;
+    border-radius: 15px;
+    background-color: rgb(0, 23, 51);
+    border: 1% solid rgb(0, 23, 51);
+    box-shadow: 0 0 10px rgb(0, 113, 141);
+    
+}
+
+section.sobre-empresa .slide-Historia .imagem{
+    background-size: 100% 100%;
+    display: block;
+    float: left;
+    height:30vw;
+    font-size: 5%;
+    color: red;
+    width:45vw;   
+}
+
+section.sobre-empresa .slide-Historia .imagem p{
+ margin-top: 31.5%;   
+ text-decoration: underline;
+}
+
+section.serviços{
+    background-image: url(../img/background-black.webp);
+    background-position: center;
+    background-size: 100% 110%;
+    height:auto;
+    width:100%;
+    padding: 6vw 0;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+}
+
+section.serviços .cards{
+    width: 90%;
+    height: calc(75vw / 3 );
+    margin: 4vw auto;
+    color: rgb(172, 172, 172);
+    padding: 1.5vw;
+    background-color: rgb(0, 23, 51);
+    box-shadow: 0 0.1vw 0.5vw rgb(0, 0, 0);
+}
+
+section.serviços .cards img{
+height: 99%;
+width: 40%;
+float: left;
+}
+section.serviços .cards:nth-child(3) img{float: right;}
+
+section.serviços .cards:nth-child(4){ height: calc(90vw / 3);}
+
+section.serviços .cards u{
+    text-shadow: 0 0 3px white;
+    color: white;
+}
+
+section.serviços .content h1 {
+    font-size: 6vw;
+}
+
+section.serviços .cards p{
+    height: 70%;
+    width: 57%;
+    float: right;
+    font-size: 1.7vw;
+    text-align: justify;
+    padding: 0vw 1vw;
+}
+
+section.depoimentos .content{
+    background-image: url(../img/background-black.webp);
+    background-position: center;
+    background-size: 100% 110%;
+    height:auto;
+    width:100%;
+    color: aliceblue;
+    text-align: center;
+}
+
+section.depoimentos .titulo{
+    font-size: 4vw;
+    padding: 2% 0;
+}
+    
+section.depoimentos .depoimentos-pessoas{
+    width: 95%;
+    margin: 0 auto;
+    height: 40vw;
+    padding: 2vw 0;
+}
+section.depoimentos .depoimentos-pessoas .content-conteudo{
+    padding-top: 25%;
+    width:calc(100% / 3 - 5.2%);
+    float: left;
+    background-color:rgb(0, 0, 0);
+    box-shadow: 0 0.1vw 0.5vw black;
+    margin: 2% 2.6%;   
+}
+
+section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{
+    background-color:rgba(000,100,200,0.7);
+    padding: 5%;
+    font-size: 1.2vw;
+}
+
+section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo p{
+    width: 100%; 
+}
+
+section.formulario{
+    background-image: url(../img/background-black.webp);
+    background-position: center;
+    background-size: 100% 110%;
+    height:auto;
+
+    color: aliceblue;
+    display: flex ;
+    padding: 5vw;
+}
+
+section.formulario .text { 
+    width: 50% ;
+    top:5%;
+    left: 10%;
+    font-size: 2vw;
+    text-align: left;
+}
+
+section.formulario .text h2{
+    font-size: 5vw;
+}
+
+section.formulario form.form-aula{
+    width: 30vw;
+    height:50vw;
+    background-color: rgb(200,200,200);
+}
+
+section.formulario form.form-aula h2{
+    height:calc((100% / 6) - 10%);
+    padding:5%;
+    font-size: 2.6vw;
+    background-color: rgb(124, 124, 124);
+}
+
+section.formulario form.form-aula .input-aula{
+    height:calc(100% / 6.5);
+    margin: 3% 0;     
+}
+
+section.formulario form.form-aula .input-aula label,section.formulario form.form-aula .input-aula input{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height:50%;
+    border: none;
+    padding: 1%;
+    padding-left: 3%;
+}
+
+section.formulario form.form-aula .input-aula input{
+    outline: none;
+    font-size: 1.2vw;
+}
+
+section.formulario form.form-aula .input-aula label{
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: -4%;
+    margin-left: 12%;
+    font-size: 2vw;
+}
+
+section.formulario form.form-aula .data,section.formulario form.form-aula  .tele{
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+}
+
+section.formulario form.form-aula .tele {
+    margin-left: 5%;
+}
+section.formulario form.form-aula .data{
+    margin-left: 8%;
+} 
+
+section.formulario form.form-aula input:valid{
+    outline:3px solid rgb(0, 100, 0);
+    border-radius: 2px;
+}
+
+section.formulario form.form-aula .data label,section.formulario form.form-aula  .tele label{
+    font-size: 2vw;
+    margin-bottom: -10%;
+}
+
+
+section.formulario form.form-aula select {
+    display: block;
+    margin: 0 auto;
+    width: 83%;
+    height:50%;
+    border: none;
+    padding: 0.7%;
+    font-size: 1.2vw;   
+}   
+
+section.formulario form.form-aula .input-aula input[type=submit]{
+    width:70%;
+    font-size: 2vw;
+    margin:0  15%;
+    height: 60%;
+    background-color: rgb(000, 100, 220);
+    color:aliceblue;
+    border:none;
+    box-shadow: 0.3vw 0.6vw 0.3vw black;  
+    outline: none;
+}
+
+section.formulario form.form-aula input[type=submit]:active{
+    transition: scale(0.98);
+    border: 4px ridge  rgb(000, 100, 220);
+    box-shadow: 0px 2px 3px black;
+}
+
+section.contato{
+    display: flex;
+    height:10vw;
+    width: 100%;
+    background-color: rgb(000, 100, 220);
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+section.contato div{
+    display: inline-block;
+}
+
+section.contato div.titulo{
+    width: 30%;
+    text-align: left;
+    margin: 1% 0;
+    margin-left: 5%;
+    font-size: 1.5vw;
+    display: flex;
+}
+
+section.contato .meios-contato{
+    float: right;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    font-size: 1.1vw;
+}
+
+section.contato div.meios-contato .informativo{
+    width: 30%;
+    margin: 0 1%;
+}
+
+section.contato-mobile{
+    position: absolute;
+    margin-top: 10vh;
+    height: 10vh;
+    width: 100%;
+    display: none;
+    text-align: center;
+    align-items: center;
+    background-color:  rgb(000, 100, 220);
+    color: aliceblue;
+    overflow: hidden;
+}
+
+section.contato-mobile .logo-final{
+    height: 150%;
+    width: 60%;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: absolute;
+    left: 57%;
+    top: -20%;
+    opacity: 0.2;
+}
+
+section.contato-mobile .logo-final,section.contato-mobile h1{
+    display: inline-block;
+}
+
+section.contato-mobile h1{
+    font-size: 12%;
+    position: absolute;
+    left: 27%;
+    top:12%;
+    letter-spacing: 2px;
+    text-shadow: 0px 0px 5px white;
+}
+
