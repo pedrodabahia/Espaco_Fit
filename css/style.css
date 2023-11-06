@@ -423,22 +423,22 @@ section.contato div.meios-contato .informativo{
             font-size: 1.8vh;
             margin: 4% 0;}
     section.sobre-empresa .slide-Historia{
-                height:30vh;
-                width: 50vw;
-                margin: 15% 10%;
+                height:35vh;
+                width: 80vw;
+                margin: 15% 10vw;
         
 
             }
     section.sobre-empresa .slide-Historia .imagem{
-        height:25vh;
-        width:50vw;
+        height:30vh;
+        width:80vw;
 
     }
     section.sobre-empresa .slide-Historia .imagem p{
         width: 80%; 
         margin: 0 10%;
         text-align: center;
-        margin-top: 27vh;
+        margin-top: 32vh;
         display: inline-block;
     }
     section.serviços{
