@@ -442,7 +442,7 @@ section.contato div.meios-contato .informativo{
     }
     section.serviços{
         background-image:none;
-        background-color: rgb(0,13,41)
+        background-color: rgb(10,10,10)
     }
     section.serviços .content h1{
         font-size: 14vw;
@@ -469,7 +469,7 @@ section.contato div.meios-contato .informativo{
     
     section.depoimentos .content{
         background-image:none;
-        background-color: rgb(10,10,10);
+        background-color: rgb(00,23,51);
     }
     
     section.depoimentos .titulo{
