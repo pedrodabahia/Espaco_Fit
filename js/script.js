@@ -16,7 +16,7 @@ $(function(){
      setInterval(function(){    
             playSlider(cont);
             cont++;
-            if(cont == 14)
+            if(cont == 15)
                 cont = 0
            
             },delay)
