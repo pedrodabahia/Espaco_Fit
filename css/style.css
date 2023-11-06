@@ -462,6 +462,11 @@ section.contato div.meios-contato .informativo{
     section.serviços .cards:nth-child(3) img{float: none;}
     section.serviços .cards:nth-child(4){height:auto;}
     
+    section.depoimentos .content{
+        background-image:none;
+        background-color: rgb(0, 23, 51);
+    }
+    
     section.depoimentos .titulo{
         font-size: 9vw;
         padding-top: 4vh;
