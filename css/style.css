@@ -393,7 +393,7 @@ section.contato div.meios-contato .informativo{
     margin: 0 1%;
 }
 
-@media screen and (max-width: 1200px ) and (min-height: 2200px) {
+@media screen and (min-height: 2200px) {
     header{height: 90vh;}
     
     header nav{
