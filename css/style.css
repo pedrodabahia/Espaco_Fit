@@ -437,7 +437,7 @@ section.contato div.meios-contato .informativo{
         width: 80%; 
         margin: 0 10%;
         text-align: center;
-        margin-top: 6vw;
+        margin-top: 22vw;
         display: inline-block;
     }
     section.serviços .content h1{
@@ -487,6 +487,8 @@ section.contato div.meios-contato .informativo{
     section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{
         padding:5%;
         font-size: 1.8vh;
+        background-color:white;
+        color: rgb(0, 23, 51);
         
     }
     section.formulario .content{
