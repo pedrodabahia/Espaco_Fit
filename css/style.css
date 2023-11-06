@@ -96,7 +96,7 @@ section.sobre-empresa .text-sobre{
     padding-top:0vw;
     color: white;
     text-align: center;
-    margin: auto;
+    margin: auto 5%;
 }
 section.sobre-empresa .text-sobre h1{
     font-size: 5vw;
