@@ -410,7 +410,8 @@ section.contato div.meios-contato .informativo{
         margin-top: 2vw;}
 
     section.sobre-empresa{
-        background-image:url('../img/projeto-fibras-textura_1100-99.jpg')
+    background-image:none;
+    background-color: rgb(0, 23, 51);
     }
 
     section.sobre-empresa .text-sobre h1{
@@ -435,7 +436,7 @@ section.contato div.meios-contato .informativo{
         width: 80%; 
         margin: 0 10%;
         text-align: center;
-        margin-top: 60vw;
+        margin-top: 6vw;
         display: inline-block;
     }
     section.serviços .content h1{
