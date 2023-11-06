@@ -442,7 +442,7 @@ section.contato div.meios-contato .informativo{
     }
     section.serviços{
         background-image:none;
-        background-color: rgb(3,3,3)
+        background-color: rgb(10,10,10)
     }
     section.serviços .content h1{
         font-size: 14vw;
@@ -491,7 +491,7 @@ section.contato div.meios-contato .informativo{
     section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{
         padding:5%;
         font-size: 1.8vh;
-        background-color:rgb(3,3,3);
+        background-color:rgb(10,10,10);
         color: rgb(255, 255 ,255);
         
     }
@@ -501,7 +501,7 @@ section.contato div.meios-contato .informativo{
     }
     section.formulario{
         background-image:none;
-        background-color:rgb(3,3,3);
+        background-color:rgb(10,10,10);
     }
     section.formulario .text { 
         width: 90% ;
@@ -542,7 +542,6 @@ section.contato div.meios-contato .informativo{
     }   
 section.contato{
     height:20vw;
-    background-color:darkgreen;
     
 }
 section.contato div.titulo{
