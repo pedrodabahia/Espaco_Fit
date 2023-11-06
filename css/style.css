@@ -220,7 +220,8 @@ section.depoimentos .depoimentos-pessoas .content-conteudo{
 }
 
 section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{
-    background-color:rgba(000,100,200,0.7);
+    background-color:white;
+    color: rgb(0, 23, 51);
     padding: 5%;
     font-size: 1.2vw;
 }
