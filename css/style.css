@@ -420,7 +420,7 @@ section.contato div.meios-contato .informativo{
                 height:25vh;
                 width: 60%;
                 margin: 15% 20%;
-                
+
             }
     section.sobre-empresa .slide-Historia .imagem{
         height:20vh;
@@ -521,6 +521,7 @@ section.contato div.meios-contato .informativo{
     }   
 section.contato{
     height:20vw;
+    background-color:red;
     
 }
 section.contato div.titulo{
