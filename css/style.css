@@ -1,565 +1,572 @@
 *{
-padding:0;
-margin:0;
-font-family: "personal 1";
-user-select: none;
-}
-@font-face{
-    font-family:'personal 1';
-    src:url('../fonts/Bebas_Neue/font_personal.ttf');
-}
-@font-face {
-    font-family:'font para texto' ;
-    src: url('../fonts/Quicksand/Quicksand.ttf');
-}
-body{
-    background-color: black;
-    overflow-x: hidden;
-}
-
-header{
-    background-color: rgb(150,150,150);
-    height:100vh;
-    background-image: url(../img/background-black.webp);
-    background-position: center;
-    background-size: 100% 110%;
-    background-repeat: no-repeat;
-    text-align: center;
-}
-header nav{
-    height:12vh;
-    display: flex;
-    align-items: center;
-    padding-top: 1vh;    
-    font-size: 3vw;
-}
-header nav .logo{
-    height: 12vh;
-    width:17%;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image:url(../img/IMG-4923.png);
-}
-header nav h3{
-    color: rgb(255, 255, 255);
-
-}
-.inscreva-se{
-    margin: auto;
-    margin-top:10%;
-    color: white;
-    height: 50%;
-    width: 90%;   
-}
-.inscreva-se h1{
-    font-size: 10vw;
-    letter-spacing:10px;
-    margin-bottom: 1%;
-}
-.inscreva-se button{
-    width: 30%;
-    height:20%;
-    font-size:3vw;
-    color: white;
-    background-color: rgb(000, 100, 220);
-    box-shadow: 3px 6px 3px black;  
-    border: none;
-    cursor: pointer;
-}
-.inscreva-se button:active{
-    transition: scale(0.98);
-    border: 0.5% ridge  rgb(000, 100, 220);
-    box-shadow: 0px 2px 3px black;
+    padding:0;
+    margin:0;
+    font-family: "personal 1";
+    user-select: none;
+    }
+    @font-face{
+        font-family:'personal 1';
+        src:url('../fonts/Bebas_Neue/font_personal.ttf');
+    }
+    @font-face {
+        font-family:'font para texto' ;
+        src: url('../fonts/Quicksand/Quicksand.ttf');
+    }
+    body{
+        background-color: black;
+        overflow-x: hidden;
+    }
     
-}
-hr.divisoria-1{
-    background-image: linear-gradient(to left, transparent,rgb(000,100,250),transparent);
-    height: 0.3vh;
-    border: none;
-    width: 80%;
-    margin: 0 auto;
-}
-section.sobre-empresa{
-    background-image: url(../img/background-azul.jpg);
-    background-position: center;
-    background-size: 100% 110%;
-    height:auto;
-    padding: 6vw 0;
-    width:100%;
-}
-section.sobre-empresa .text-sobre{
-    width: 90% ;
-    height: 70%;
-    display: block;
-    padding-left: 4%;
-    padding-top:0vw;
-    color: white;
-    text-align: center;
-    margin: auto;
-    margin-left:2%;
-    margin-right:7%;
-}
-section.sobre-empresa .text-sobre h1{
-    font-size: 5vw;
-    width: 30%;
-    padding: 3vw 0;
-    margin: 0 30% ;
-}
-section.sobre-empresa .text-sobre p{
-    font-size: 1.6vw;
-    width:100%;
-    text-align: justify;
-    margin: 1% 0;
-    font-family: 'font para texto';
-   
-}
-
-section.sobre-empresa .slide-Historia{
-    height:30vw;
-    width:45vw;
-    margin: 5% 22%;
-    overflow:hidden;
-    border-radius: 15px;
-    background-color: rgb(0, 23, 51);
-    border: 1% solid rgb(0, 23, 51);
-    box-shadow: 0 0.4vw 0.8vw rgb(0,0,0);
-    
-}
-
-section.sobre-empresa .slide-Historia .imagem{
-    background-size: 100% 100%;
-    display: block;
-    float: left;
-    height:30vw;
-    font-size: 5%;
-    color: red;
-    width:45vw;   
-}
-
-section.sobre-empresa .slide-Historia .imagem p{
- margin-top: 31.5%;   
- text-decoration: underline;
-}
-
-section.serviços{
-    background-image: url(../img/background-black.webp);
-    background-position: center;
-    background-size: 100% 110%;
-    height:auto;
-    width:100%;
-    padding: 6vw 0;
-    color: aliceblue;
-    align-items: center;
-    text-align: center;
-}
-
-section.serviços .cards{
-    width: 90%;
-    height: calc(75vw / 3 );
-    margin: 4vw auto;
-    color: rgb(172, 172, 172);
-    padding: 1.5vw;
-    background-color: rgb(0, 23, 51);
-    box-shadow: 0 0.1vw 0.5vw rgb(0, 0, 0);
-}
-
-section.serviços .cards img{
-height: 99%;
-width: 40%;
-float: left;
-}
-section.serviços .cards:nth-child(3) img{float: right;}
-
-section.serviços .cards:nth-child(4){ height: calc(90vw / 3);}
-
-section.serviços .cards u{
-    text-shadow: 0 0 3px white;
-    color: white;
-}
-
-section.serviços .content h1 {
-    font-size: 6vw;
-}
-
-section.serviços .cards p{
-    height: 70%;
-    width: 57%;
-    float: right;
-    font-size: 1.7vw;
-    text-align: justify;
-    padding: 0vw 1vw;
-}
-
-section.depoimentos .content{
-    background-image: url(../img/background-azul.jpg);
-    background-position: center;
-    background-size: 100% 110%;
-    height:auto;
-    width:100%;
-    color: aliceblue;
-    text-align: center;
-}
-
-section.depoimentos .titulo{
-    font-size: 4vw;
-    padding: 2% 0;
-}
-    
-section.depoimentos .depoimentos-pessoas{
-    width: 95%;
-    margin: 0 auto;
-    height: 40vw;
-    padding: 2vw 0;
-}
-section.depoimentos .depoimentos-pessoas .content-conteudo{
-    padding-top: 25%;
-    width:calc(100% / 3 - 5.2%);
-    float: left;
-    background-color:rgb(0, 0, 0);
-    box-shadow: 0 0.4vw 0.8vw black;
-    margin: 2% 2.6%;   
-}
-
-section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{
-    background-color:white;
-    color: rgb(0, 23, 51);
-    padding: 5%;
-    font-size: 1.2vw;
-}
-
-section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo p{
-    width: 100%; 
-}
-
-section.formulario{
-    background-image: url(../img/background-black.webp);
-    background-position: center;
-    background-size: 100% 110%;
-    height:auto;
-    color: rgb(97, 97, 97);  
-    display: block ;
-    padding: 5vw;
-}
-section.formulario .content{
-    display: flex;
-}
-
-section.formulario .text { 
-    width: 50% ;
-    top:5%;
-    left: 10%;
-    font-size: 2vw;
-    text-align: left;
-    color: aliceblue;
-    
-}
-
-section.formulario .text h2{
-    font-size: 5vw;
-    color: aliceblue;
-}
-
-section.formulario form.form-aula{
-    width: 30vw;
-    height:50vw;
-    background-color: rgb(200,200,200);
-}
-
-section.formulario form.form-aula h2{
-    height:calc((100% / 6) - 10%);
-    padding:5%;
-    font-size: 2.6vw;
-    color: aliceblue;
-    background-color: rgb(124, 124, 124);
-}
-
-section.formulario form.form-aula .input-aula{
-    height:calc(100% / 6.5);
-    margin: 3% 0;     
-}
-
-section.formulario form.form-aula .input-aula label,section.formulario form.form-aula .input-aula input{
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    height:50%;
-    border: none;
-    padding: 1%;
-    padding-left: 3%;
-}
-
-section.formulario form.form-aula .input-aula input{
-    outline: none;
-    font-size: 1.2vw;
-}
-
-section.formulario form.form-aula .input-aula label{
-    margin: 0 auto;
-    text-align: left;
-    margin-bottom: -4%;
-    margin-left: 12%;
-    font-size: 2vw;
-}
-
-section.formulario form.form-aula .data,section.formulario form.form-aula  .tele{
-    width: 40%;
-    display: inline-block;
-    text-align: center;
-    
-}
-
-section.formulario form.form-aula .tele {
-    margin-left: 5%;
-}
-section.formulario form.form-aula .data{
-    margin-left: 8%;
-} 
-
-section.formulario form.form-aula .data input{
-    color: rgb(97, 97, 97);  
-}
-
-section.formulario form.form-aula input:valid{
-    outline:3px solid rgb(0, 100, 0);
-    border-radius: 2px;
-}
-
-section.formulario form.form-aula .data label,section.formulario form.form-aula  .tele label{
-    font-size: 2vw;
-    margin-bottom: -10%;
-}
-
-
-section.formulario form.form-aula select {
-    display: block;
-    margin: 0 auto;
-    width: 83%;
-    height:50%;
-    border: none;
-    padding: 0.7%;
-    font-size: 1.2vw; 
-    color: rgb(97, 97, 97);  
-}   
-
-section.formulario form.form-aula .input-aula input[type=submit]{
-    width:70%;
-    font-size: 2vw;
-    margin:0  15%;
-    height: 60%;
-    background-color: rgb(000, 100, 220);
-    color: rgb(255, 255, 255);  
-    border:none;
-    box-shadow: 0.3vw 0.6vw 0.3vw black;  
-    outline: none;
-}
-
-section.formulario form.form-aula input[type=submit]:active{
-    transition: scale(0.98);
-    border: 4px ridge  rgb(000, 100, 220);
-    box-shadow: 0px 2px 3px black;
-}
-
-section.contato{
-    display: flex;
-    height:10vw;
-    width: 100%;
-    background-color: rgb(000, 100, 220);
-    color: white;
-    align-items: center;
-    text-align: center;
-}
-
-section.contato div{
-    display: inline-block;
-}
-
-section.contato div.titulo{
-    width: 30%;
-    text-align: left;
-    margin: 1% 0;
-    margin-left: 5%;
-    font-size: 1.5vw;
-    display: flex;
-}
-
-section.contato .meios-contato{
-    float: right;
-    width: 60%;
-    display: flex;
-    align-items: center;
-    font-size: 1.1vw;
-}
-
-section.contato div.meios-contato .informativo{
-    width: 30%;
-    margin: 0 1%;
-}
-
-@media screen and (max-width: 600px) {
-    header{height: 90vh;}
-    
+    header{
+        background-color: rgb(150,150,150);
+        height:100vh;
+        background-image: url(../img/background-black.webp);
+        background-position: center;
+        background-size: 100% 110%;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
     header nav{
-        padding: 0 2vw;
-        font-size: 2.5vh;}
-    header nav .logo{margin: 0 2vw;}
+        height:12vh;
+        display: flex;
+        align-items: center;
+        padding-top: 1vh;    
+        font-size: 3vw;
+    }
+    header nav .logo{
+        height: 12vh;
+        width:17%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image:url(../img/IMG-4923.png);
+    }
+    header nav h3{
+        color: rgb(255, 255, 255);
     
-    .inscreva-se{margin-top: 20vh;}
-    
+    }
+    .inscreva-se{
+        margin: auto;
+        margin-top:10%;
+        color: white;
+        height: 50%;
+        width: 90%;   
+    }
+    .inscreva-se h1{
+        font-size: 10vw;
+        letter-spacing:10px;
+        margin-bottom: 1%;
+    }
     .inscreva-se button{
-        width: 60%;
-        height: 15%;
-        font-size: 6vw;
-        margin-top: 2vw;}
-
-    section.sobre-empresa{
-    background-image:none;
-    background-color: rgb(0, 23, 51);
+        width: 30%;
+        height:20%;
+        font-size:3vw;
+        color: white;
+        background-color: rgb(000, 100, 220);
+        box-shadow: 3px 6px 3px black;  
+        border: none;
+        cursor: pointer;
     }
-
-    section.sobre-empresa .text-sobre h1{
-        font-size: 12vw;
-        width: 70%;
-        margin: 0 15%;}
-    section.sobre-empresa .text-sobre p{
-            font-size: 1.8vh;
-            margin: 4% 0;}
-    section.sobre-empresa .slide-Historia{
-                height:35vh;
-                width: 80vw;
-                margin: 15% 5vw;
+    .inscreva-se button:active{
+        transition: scale(0.98);
+        border: 0.5% ridge  rgb(000, 100, 220);
+        box-shadow: 0px 2px 3px black;
         
-
-            }
-    section.sobre-empresa .slide-Historia .imagem{
-        height:30vh;
-        width:80vw;
-
     }
-    section.sobre-empresa .slide-Historia .imagem p{
-        width: 80%; 
-        margin: 0 10%;
-        text-align: center;
-        margin-top: 32vh;
-        display: inline-block;
-    }
-    section.serviços{
-        background-image:none;
-        background-color: rgb(10,10,10)
-    }
-    section.serviços .content h1{
-        font-size: 14vw;
-    }
-    section.serviços .cards{
-        height: auto;
+    hr.divisoria-1{
+        background-image: linear-gradient(to left, transparent,rgb(000,100,250),transparent);
+        height: 0.3vh;
+        border: none;
         width: 80%;
+        margin: 0 auto;
+    }
+    section.sobre-empresa{
+        background-image: url(../img/background-azul.jpg);
+        background-position: center;
+        background-size: 100% 110%;
+        height:auto;
+        padding: 6vw 0;
+        width:100%;
+    }
+    section.sobre-empresa .text-sobre{
+        width: 90% ;
+        height: 70%;
+        display: block;
+        padding-left: 4%;
+        padding-top:0vw;
+        color: white;
         text-align: center;
-        margin-top:10vw;
+        margin: auto;
+        margin-left:2%;
+        margin-right:7%;
     }
-    section.serviços .cards img, section.serviços .cards p{
-        float: none;
-        display: inline-block; 
-        height: 25vh;
-        width: 95%;
-        margin-top: 1vh;
+    section.sobre-empresa .text-sobre h1{
+        font-size: 5vw;
+        width: 30%;
+        padding: 3vw 0;
+        margin: 0 30% ;
     }
+    section.sobre-empresa .text-sobre p{
+        font-size: 1.6vw;
+        width:100%;
+        text-align: justify;
+        margin: 1% 0;
+        font-family: 'font para texto';
+       
+    }
+    
+    section.sobre-empresa .slide-Historia{
+       
+       
+       
+        height:36vw;
+        width:45vw;
+        margin: 5% 22%;
+        overflow:hidden;
+        border-radius: 15px;
+        background-color: rgb(0, 23, 51);
+        border: 1% solid rgb(0, 23, 51);
+        box-shadow: 0 0.4vw 0.8vw rgb(0,0,0);
+        
+    }
+    
+    section.sobre-empresa .slide-Historia .imagem{
+        background-size: 100% 100%;
+        display: block;
+        float: left;
+        height:30vw;
+        font-size: 5%;
+        color: rgb(255, 255, 255);
+        width:45vw;   
+    }
+    
+    section.sobre-empresa .slide-Historia .imagem p{
+     width: 80%;
+     margin: 0 10%;
+     margin-top: 32vw;   
+     text-align: center;
+     text-decoration: underline;
+    }
+    
+    section.serviços{
+        background-image: url(../img/background-black.webp);
+        background-position: center;
+        background-size: 100% 110%;
+        height:auto;
+        width:100%;
+        padding: 6vw 0;
+        color: aliceblue;
+        align-items: center;
+        text-align: center;
+    }
+    
+    section.serviços .cards{
+        width: 90%;
+        height: calc(75vw / 3 );
+        margin: 4vw auto;
+        color: rgb(172, 172, 172);
+        padding: 1.5vw;
+        background-color: rgb(0, 23, 51);
+        box-shadow: 0 0.1vw 0.5vw rgb(0, 0, 0);
+    }
+    
+    section.serviços .cards img{
+    height: 99%;
+    width: 40%;
+    float: left;
+    }
+    section.serviços .cards:nth-child(3) img{float: right;}
+    
+    section.serviços .cards:nth-child(4){ height: calc(90vw / 3);}
+    
+    section.serviços .cards u{
+        text-shadow: 0 0 3px white;
+        color: white;
+    }
+    
+    section.serviços .content h1 {
+        font-size: 6vw;
+    }
+    
     section.serviços .cards p{
-        height: auto;
-        font-size: 2vh;
+        height: 70%;
+        width: 57%;
+        float: right;
+        font-size: 1.7vw;
+        text-align: justify;
+        padding: 0vw 1vw;
     }
-    section.serviços .cards:nth-child(3) img{float: none;}
-    section.serviços .cards:nth-child(4){height:auto;}
     
     section.depoimentos .content{
-        background-image:none;
-        background-color: rgb(00,23,51);
+        background-image: url(../img/background-azul.jpg);
+        background-position: center;
+        background-size: 100% 110%;
+        height:auto;
+        width:100%;
+        color: aliceblue;
+        text-align: center;
     }
     
     section.depoimentos .titulo{
-        font-size: 9vw;
-        padding-top: 4vh;
+        font-size: 4vw;
+        padding: 2% 0;
     }
-
+        
     section.depoimentos .depoimentos-pessoas{
-        width: 70%;
+        width: 95%;
         margin: 0 auto;
-        height: 140vh;
+        height: 40vw;
+        padding: 2vw 0;
     }
     section.depoimentos .depoimentos-pessoas .content-conteudo{
-        display: block;
-        width: 100%;
-        padding-top: 25vh;
-        margin-top: 15%;
+        padding-top: 25%;
+        width:calc(100% / 3 - 5.2%);
+        float: left;
+        background-color:rgb(0, 0, 0);
+        box-shadow: 0 0.4vw 0.8vw black;
+        margin: 2% 2.6%;   
     }
+    
     section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{
-        padding:5%;
-        font-size: 1.8vh;
-        background-color:rgb(0,13,41);
-        color: rgb(255, 255 ,255);
-        
+        background-color: rgb(00,23,51);
+        color: rgb(255, 255, 255);
+        padding: 5%;
+        font-size: 1.2vw;
+    }
+    
+    section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo p{
+        width: 100%; 
+    }
+    
+    section.formulario{
+        background-image: url(../img/background-black.webp);
+        background-position: center;
+        background-size: 100% 110%;
+        height:auto;
+        color: rgb(97, 97, 97);  
+        display: block ;
+        padding: 5vw;
     }
     section.formulario .content{
-        display: block;
-        padding-bottom:10vw;
+        display: flex;
     }
-    section.formulario{
-        background-image:none;
-        background-color:rgb(10,10,10);
-    }
+    
     section.formulario .text { 
-        width: 90% ;
-        margin: 5vh 5%;
-        font-size: 4vw;
-        text-align: center;
+        width: 50% ;
+        top:5%;
+        left: 10%;
+        font-size: 2vw;
+        text-align: left;
+        color: aliceblue;
+        
     }
-    section.formulario .text  h2{ 
-        font-size: 9vw;
-    }
-    section.formulario form.form-aula{
-        width: 80vw;
-        height:160vw;
-        margin-left: 6vw;
-    }
-
-    section.formulario form.form-aula h2{
-        font-size: 7vw;
-    }
-
-    section.formulario form.form-aula .input-aula input{
-        font-size: 4vw;
-    }
-    section.formulario form.form-aula .input-aula label{
+    
+    section.formulario .text h2{
         font-size: 5vw;
-        margin-left: 6%;
+        color: aliceblue;
     }
-    section.formulario form.form-aula select{
-        font-size: 4vw;
+    
+    section.formulario form.form-aula{
+        width: 30vw;
+        height:50vw;
+        background-color: rgb(200,200,200);
     }
+    
+    section.formulario form.form-aula h2{
+        height:calc((100% / 6) - 10%);
+        padding:5%;
+        font-size: 2.6vw;
+        color: aliceblue;
+        background-color: rgb(124, 124, 124);
+    }
+    
+    section.formulario form.form-aula .input-aula{
+        height:calc(100% / 6.5);
+        margin: 3% 0;     
+    }
+    
+    section.formulario form.form-aula .input-aula label,section.formulario form.form-aula .input-aula input{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height:50%;
+        border: none;
+        padding: 1%;
+        padding-left: 3%;
+    }
+    
+    section.formulario form.form-aula .input-aula input{
+        outline: none;
+        font-size: 1.2vw;
+    }
+    
+    section.formulario form.form-aula .input-aula label{
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: -4%;
+        margin-left: 12%;
+        font-size: 2vw;
+    }
+    
+    section.formulario form.form-aula .data,section.formulario form.form-aula  .tele{
+        width: 40%;
+        display: inline-block;
+        text-align: center;
+        
+    }
+    
+    section.formulario form.form-aula .tele {
+        margin-left: 5%;
+    }
+    section.formulario form.form-aula .data{
+        margin-left: 8%;
+    } 
+    
+    section.formulario form.form-aula .data input{
+        color: rgb(97, 97, 97);  
+    }
+    
+    section.formulario form.form-aula input:valid{
+        outline:3px solid rgb(0, 100, 0);
+        border-radius: 2px;
+    }
+    
+    section.formulario form.form-aula .data label,section.formulario form.form-aula  .tele label{
+        font-size: 2vw;
+        margin-bottom: -10%;
+    }
+    
+    
+    section.formulario form.form-aula select {
+        display: block;
+        margin: 0 auto;
+        width: 83%;
+        height:50%;
+        border: none;
+        padding: 0.7%;
+        font-size: 1.2vw; 
+        color: rgb(97, 97, 97);  
+    }   
+    
     section.formulario form.form-aula .input-aula input[type=submit]{
         width:70%;
-        font-size: 5vw;
+        font-size: 2vw;
         margin:0  15%;
-        margin-top: 6vw;
         height: 60%;
-
-    }   
-section.contato{
-    height:20vw;
-    background-color:rgb(0,23,51);
+        background-color: rgb(000, 100, 220);
+        color: rgb(255, 255, 255);  
+        border:none;
+        box-shadow: 0.3vw 0.6vw 0.3vw black;  
+        outline: none;
+    }
     
-}
-section.contato div.titulo{
-    margin: 1% 0;
-    margin-left: 5%;
-    font-size: 3vw;
-  
-}
-section.contato .meios-contato{
-    font-size: 2vw;}
-
-section.contato div.meios-contato .informativo{
-    width: 40%;
-    margin: 0 3%;}
-
- 
-}       
+    section.formulario form.form-aula input[type=submit]:active{
+        transition: scale(0.98);
+        border: 4px ridge  rgb(000, 100, 220);
+        box-shadow: 0px 2px 3px black;
+    }
+    
+    section.contato{
+        display: flex;
+        height:10vw;
+        width: 100%;
+        background-color: rgb(00,23,51);
+        color: white;
+        align-items: center;
+        text-align: center;
+    }
+    
+    section.contato div{
+        display: inline-block;
+    }
+    
+    section.contato div.titulo{
+        width: 30%;
+        text-align: left;
+        margin: 1% 0;
+        margin-left: 5%;
+        font-size: 1.5vw;
+        display: flex;
+    }
+    
+    section.contato .meios-contato{
+        float: right;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        font-size: 1.1vw;
+    }
+    
+    section.contato div.meios-contato .informativo{
+        width: 30%;
+        margin: 0 1%;
+    }
+    
+    @media screen and (max-width: 600px) {
+        header{height: 90vh;}
+        
+        header nav{
+            padding: 0 2vw;
+            font-size: 2.5vh;}
+        header nav .logo{margin: 0 2vw;}
+        
+        .inscreva-se{margin-top: 20vh;}
+        
+        .inscreva-se button{
+            width: 60%;
+            height: 15%;
+            font-size: 6vw;
+            margin-top: 2vw;}
+    
+        section.sobre-empresa{
+        background-image:none;
+        background-color: rgb(0, 23, 51);
+        }
+    
+        section.sobre-empresa .text-sobre h1{
+            font-size: 12vw;
+            width: 70%;
+            margin: 0 15%;}
+        section.sobre-empresa .text-sobre p{
+                font-size: 1.8vh;
+                margin: 4% 0;}
+        section.sobre-empresa .slide-Historia{
+                    height:35vh;
+                    width: 80vw;
+                    margin: 15% 5vw;
+            
+    
+                }
+        section.sobre-empresa .slide-Historia .imagem{
+            height:30vh;
+            width:80vw;
+    
+        }
+        section.sobre-empresa .slide-Historia .imagem p{
+            width: 80%; 
+            margin: 0 10%;
+            text-align: center;
+            margin-top: 32vh;
+            display: inline-block;
+        }
+        section.serviços{
+            background-image:none;
+            background-color: rgb(10,10,10)
+        }
+        section.serviços .content h1{
+            font-size: 14vw;
+        }
+        section.serviços .cards{
+            height: auto;
+            width: 80%;
+            text-align: center;
+            margin-top:10vw;
+        }
+        section.serviços .cards img, section.serviços .cards p{
+            float: none;
+            display: inline-block; 
+            height: 25vh;
+            width: 95%;
+            margin-top: 1vh;
+        }
+        section.serviços .cards p{
+            height: auto;
+            font-size: 2vh;
+        }
+        section.serviços .cards:nth-child(3) img{float: none;}
+        section.serviços .cards:nth-child(4){height:auto;}
+        
+        section.depoimentos .content{
+            background-image:none;
+            background-color: rgb(00,23,51);
+        }
+        
+        section.depoimentos .titulo{
+            font-size: 9vw;
+            padding-top: 4vh;
+        }
+    
+        section.depoimentos .depoimentos-pessoas{
+            width: 70%;
+            margin: 0 auto;
+            height: 140vh;
+        }
+        section.depoimentos .depoimentos-pessoas .content-conteudo{
+            display: block;
+            width: 100%;
+            padding-top: 25vh;
+            margin-top: 15%;
+        }
+        section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{
+            padding:5%;
+            font-size: 1.8vh;
+            background-color:rgb(0,13,41);
+            color: rgb(255, 255 ,255);
+            
+        }
+        section.formulario .content{
+            display: block;
+            padding-bottom:10vw;
+        }
+        section.formulario{
+            background-image:none;
+            background-color:rgb(10,10,10);
+        }
+        section.formulario .text { 
+            width: 90% ;
+            margin: 5vh 5%;
+            font-size: 4vw;
+            text-align: center;
+        }
+        section.formulario .text  h2{ 
+            font-size: 9vw;
+        }
+        section.formulario form.form-aula{
+            width: 80vw;
+            height:160vw;
+            margin-left: 6vw;
+        }
+    
+        section.formulario form.form-aula h2{
+            font-size: 7vw;
+        }
+    
+        section.formulario form.form-aula .input-aula input{
+            font-size: 4vw;
+        }
+        section.formulario form.form-aula .input-aula label{
+            font-size: 5vw;
+            margin-left: 6%;
+        }
+        section.formulario form.form-aula select{
+            font-size: 4vw;
+        }
+        section.formulario form.form-aula .input-aula input[type=submit]{
+            width:70%;
+            font-size: 5vw;
+            margin:0  15%;
+            margin-top: 6vw;
+            height: 60%;
+    
+        }   
+    section.contato{
+        height:20vw;
+        background-color:rgb(0,23,51);
+        
+    }
+    section.contato div.titulo{
+        margin: 1% 0;
+        margin-left: 5%;
+        font-size: 3vw;
+      
+    }
+    section.contato .meios-contato{
+        font-size: 2vw;}
+    
+    section.contato div.meios-contato .informativo{
+        width: 40%;
+        margin: 0 3%;}
+    
+     
+    }       
+    
