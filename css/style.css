@@ -419,7 +419,7 @@ section.contato div.meios-contato .informativo{
     section.sobre-empresa .slide-Historia{
                 height:25vh;
                 width: 70vw;
-                margin: 5% 10%;
+                margin: 15% 15vw;
                 
             }
     section.sobre-empresa .slide-Historia .imagem{
@@ -441,6 +441,7 @@ section.contato div.meios-contato .informativo{
         height: auto;
         width: 80%;
         text-align: center;
+        margin-top:5vw;
     }
     section.serviços .cards img, section.serviços .cards p{
         float: none;
@@ -479,6 +480,7 @@ section.contato div.meios-contato .informativo{
     }
     section.formulario .content{
         display: block;
+        padding-bottom:5vw;
     }
     section.formulario .text { 
         width: 90% ;
