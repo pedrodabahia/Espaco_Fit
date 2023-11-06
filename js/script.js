@@ -4,7 +4,7 @@ $(function(){
     //BIBLIOTECA: JQUERY.
     //LINGUAGEM: JAVASCRIPT.
     var cont = 0;
-    var delay = 2000;
+    var delay = 4000;
     console.log($('.slide-Historia  .content').offset().left)
     //CHAMADA DA FUNCTION PRINCIPAL, HERDANDO OS VALORES DE ALTURA E LARGURA DA TELA DO USUARIO
     
