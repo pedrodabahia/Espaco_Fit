@@ -437,8 +437,12 @@ section.contato div.meios-contato .informativo{
         width: 80%; 
         margin: 0 10%;
         text-align: center;
-        margin-top: 22vw;
+        margin-top: 22vh;
         display: inline-block;
+    }
+    section.serviços{
+        background-image:none;
+        background-color: rgb(10,10,10)
     }
     section.serviços .content h1{
         font-size: 14vw;
