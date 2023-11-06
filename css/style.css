@@ -418,8 +418,8 @@ section.contato div.meios-contato .informativo{
             margin: 4% 0;}
     section.sobre-empresa .slide-Historia{
                 height:25vh;
-                width: 60%;
-                margin: 15% 20%;
+                width: 80%;
+                margin: 15% 10%;
 
             }
     section.sobre-empresa .slide-Historia .imagem{
@@ -521,7 +521,7 @@ section.contato div.meios-contato .informativo{
     }   
 section.contato{
     height:20vw;
-    background-color:red;
+    background-color:darkgreen;
     
 }
 section.contato div.titulo{
