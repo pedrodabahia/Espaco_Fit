@@ -409,6 +409,10 @@ section.contato div.meios-contato .informativo{
         font-size: 6vw;
         margin-top: 2vw;}
 
+    section.sobre-empresa{
+        background-image:url('../img/projeto-fibras-textura_1100-99.jpg')
+    }
+
     section.sobre-empresa .text-sobre h1{
         font-size: 12vw;
         width: 70%;
