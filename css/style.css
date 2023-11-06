@@ -30,7 +30,8 @@ header nav{
     height:12vh;
     display: flex;
     align-items: center;
-    padding-top: 1vh;
+    padding-top: 1vh;    
+    font-size: 3vw;
 }
 header nav .logo{
     height: 12vh;
@@ -42,7 +43,7 @@ header nav .logo{
 }
 header nav h3{
     color: rgb(255, 255, 255);
-    font-size: 3vw;
+
 }
 .inscreva-se{
     margin: auto;
@@ -189,7 +190,7 @@ section.serviços .cards p{
 }
 
 section.depoimentos .content{
-    background-image: url(../img/background-black.webp);
+    background-image: url(../img/background-azul.jpg);
     background-position: center;
     background-size: 100% 110%;
     height:auto;
@@ -233,10 +234,12 @@ section.formulario{
     background-position: center;
     background-size: 100% 110%;
     height:auto;
-
-    color: aliceblue;
-    display: flex ;
+    color: rgb(97, 97, 97);  
+    display: block ;
     padding: 5vw;
+}
+section.formulario .content{
+    display: flex;
 }
 
 section.formulario .text { 
@@ -245,10 +248,13 @@ section.formulario .text {
     left: 10%;
     font-size: 2vw;
     text-align: left;
+    color: aliceblue;
+    
 }
 
 section.formulario .text h2{
     font-size: 5vw;
+    color: aliceblue;
 }
 
 section.formulario form.form-aula{
@@ -261,6 +267,7 @@ section.formulario form.form-aula h2{
     height:calc((100% / 6) - 10%);
     padding:5%;
     font-size: 2.6vw;
+    color: aliceblue;
     background-color: rgb(124, 124, 124);
 }
 
@@ -296,6 +303,7 @@ section.formulario form.form-aula .data,section.formulario form.form-aula  .tele
     width: 40%;
     display: inline-block;
     text-align: center;
+    
 }
 
 section.formulario form.form-aula .tele {
@@ -304,6 +312,10 @@ section.formulario form.form-aula .tele {
 section.formulario form.form-aula .data{
     margin-left: 8%;
 } 
+
+section.formulario form.form-aula .data input{
+    color: rgb(97, 97, 97);  
+}
 
 section.formulario form.form-aula input:valid{
     outline:3px solid rgb(0, 100, 0);
@@ -323,7 +335,8 @@ section.formulario form.form-aula select {
     height:50%;
     border: none;
     padding: 0.7%;
-    font-size: 1.2vw;   
+    font-size: 1.2vw; 
+    color: rgb(97, 97, 97);  
 }   
 
 section.formulario form.form-aula .input-aula input[type=submit]{
@@ -332,7 +345,7 @@ section.formulario form.form-aula .input-aula input[type=submit]{
     margin:0  15%;
     height: 60%;
     background-color: rgb(000, 100, 220);
-    color:aliceblue;
+    color: rgb(255, 255, 255);  
     border:none;
     box-shadow: 0.3vw 0.6vw 0.3vw black;  
     outline: none;
@@ -380,41 +393,145 @@ section.contato div.meios-contato .informativo{
     margin: 0 1%;
 }
 
-section.contato-mobile{
-    position: absolute;
-    margin-top: 10vh;
-    height: 10vh;
-    width: 100%;
-    display: none;
-    text-align: center;
-    align-items: center;
-    background-color:  rgb(000, 100, 220);
-    color: aliceblue;
-    overflow: hidden;
-}
+@media screen and (max-width: 1200px ) and (min-height: 2200px) {
+    header{height: 90vh;}
+    
+    header nav{
+        padding: 0 2vw;
+        font-size: 2.5vh;}
+    header nav .logo{margin: 0 2vw;}
+    
+    .inscreva-se{margin-top: 20vh;}
+    
+    .inscreva-se button{
+        width: 60%;
+        height: 15%;
+        font-size: 6vw;
+        margin-top: 2vw;}
 
-section.contato-mobile .logo-final{
-    height: 150%;
-    width: 60%;
-    background-size:contain;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    position: absolute;
-    left: 57%;
-    top: -20%;
-    opacity: 0.2;
-}
+    section.sobre-empresa .text-sobre h1{
+        font-size: 12vw;
+        width: 70%;
+        margin: 0 15%;}
+    section.sobre-empresa .text-sobre p{
+            font-size: 1.8vh;
+            margin: 4% 0;}
+    section.sobre-empresa .slide-Historia{
+                height:25vh;
+                width: 70vw;
+                margin: 5% 10%;
+                
+            }
+    section.sobre-empresa .slide-Historia .imagem{
+        height:20vh;
+        width:70vw;
 
-section.contato-mobile .logo-final,section.contato-mobile h1{
-    display: inline-block;
-}
+    }
+    section.sobre-empresa .slide-Historia .imagem p{
+        width: 80%; 
+        margin: 0 10%;
+        text-align: center;
+        margin-top: 60vw;
+        display: inline-block;
+    }
+    section.serviços .content h1{
+        font-size: 14vw;
+    }
+    section.serviços .cards{
+        height: auto;
+        width: 80%;
+        text-align: center;
+    }
+    section.serviços .cards img, section.serviços .cards p{
+        float: none;
+        display: inline-block; 
+        height: 25vh;
+        width: 95%;
+        margin-top: 1vh;
+    }
+    section.serviços .cards p{
+        height: auto;
+        font-size: 2vh;
+    }
+    section.serviços .cards:nth-child(3) img{float: none;}
+    section.serviços .cards:nth-child(4){height:auto;}
+    
+    section.depoimentos .titulo{
+        font-size: 9vw;
+        padding-top: 4vh;
+    }
 
-section.contato-mobile h1{
-    font-size: 12%;
-    position: absolute;
-    left: 27%;
-    top:12%;
-    letter-spacing: 2px;
-    text-shadow: 0px 0px 5px white;
-}
+    section.depoimentos .depoimentos-pessoas{
+        width: 70%;
+        margin: 0 auto;
+        height: 140vh;
+    }
+    section.depoimentos .depoimentos-pessoas .content-conteudo{
+        display: block;
+        width: 100%;
+        padding-top: 25vh;
+        margin-top: 15%;
+    }
+    section.depoimentos .depoimentos-pessoas .content-conteudo .conteudo{
+        padding:5%;
+        font-size: 1.8vh;
+        
+    }
+    section.formulario .content{
+        display: block;
+    }
+    section.formulario .text { 
+        width: 90% ;
+        margin: 5vh 5%;
+        font-size: 4vw;
+        text-align: center;
+    }
+    section.formulario .text  h2{ 
+        font-size: 9vw;
+    }
+    section.formulario form.form-aula{
+        width: 80vw;
+        height:160vw;
+        margin-left: 6vw;
+    }
 
+    section.formulario form.form-aula h2{
+        font-size: 7vw;
+    }
+
+    section.formulario form.form-aula .input-aula input{
+        font-size: 4vw;
+    }
+    section.formulario form.form-aula .input-aula label{
+        font-size: 5vw;
+        margin-left: 6%;
+    }
+    section.formulario form.form-aula select{
+        font-size: 4vw;
+    }
+    section.formulario form.form-aula .input-aula input[type=submit]{
+        width:70%;
+        font-size: 5vw;
+        margin:0  15%;
+        margin-top: 6vw;
+        height: 60%;
+
+    }   
+section.contato{
+    height:20vw;
+}
+section.contato div.titulo{
+    margin: 1% 0;
+    margin-left: 5%;
+    font-size: 3vw;
+  
+}
+section.contato .meios-contato{
+    font-size: 2vw;}
+
+section.contato div.meios-contato .informativo{
+    width: 40%;
+    margin: 0 3%;}
+
+ 
+}       
