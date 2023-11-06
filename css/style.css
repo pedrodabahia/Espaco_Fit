@@ -96,7 +96,9 @@ section.sobre-empresa .text-sobre{
     padding-top:0vw;
     color: white;
     text-align: center;
-    margin: auto 5%;
+    margin: auto;
+    margin-left:2%;
+    margin-right:7%;
 }
 section.sobre-empresa .text-sobre h1{
     font-size: 5vw;
@@ -425,7 +427,7 @@ section.contato div.meios-contato .informativo{
     section.sobre-empresa .slide-Historia{
                 height:35vh;
                 width: 80vw;
-                margin: 15% 10vw;
+                margin: 15% 5vw;
         
 
             }
