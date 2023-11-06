@@ -441,7 +441,7 @@ section.contato div.meios-contato .informativo{
         height: auto;
         width: 80%;
         text-align: center;
-        margin-top:5vw;
+        margin-top:55vw;
     }
     section.serviços .cards img, section.serviços .cards p{
         float: none;
@@ -480,7 +480,7 @@ section.contato div.meios-contato .informativo{
     }
     section.formulario .content{
         display: block;
-        padding-bottom:5vw;
+        padding-bottom:55vw;
     }
     section.formulario .text { 
         width: 90% ;
