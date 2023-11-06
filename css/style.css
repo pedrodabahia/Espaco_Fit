@@ -521,6 +521,8 @@ section.contato div.meios-contato .informativo{
     }   
 section.contato{
     height:20vw;
+    background-color:red;
+    
 }
 section.contato div.titulo{
     margin: 1% 0;
