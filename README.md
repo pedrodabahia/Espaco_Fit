@@ -21,6 +21,7 @@ Mas o mesmo esta funcionando se for posto para teste de design.**
 ## :framed_picture: Screenshots
 <img src="./screen/screenshot.png">
 <img src="./screen/screenshot_mobile.png">
+<img src="./screen/screenshot_notebook.png">
 
 ## :wrench: Tecnologias Ultilizadas
 Foram Ultilizades teconologias base de desenvolvimento front-end, são elas:
