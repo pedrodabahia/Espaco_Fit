@@ -1,16 +1,29 @@
 # Academia Espaço Fit
 
-### :memo: Descrição
+## :memo: Descrição
+**Olá**, Seja Bem-vindo(a) ao site da **Academia Espaço Fit** ,
+este site é um site de treino, ou seja, não sera posto no ar pois tem como
+principal objetivo o treino de ferramentas de desenvolvimento **front-end**.
+O site foi projetado com informações verdadeiras e feitas com a permissão
+dos proprietarios do estabelecimento, foi desenvolvido ultilizado os 3 pilares de desenvolvimento
+web **o HTML, CSS e o Javascript**
 
-### :books: Funcionalidades
+## :books: Funcionalidades
+Como é umm site de treino, apliquei nele funcionalidades que fazem um diferencial no site, que são
+o carrosel, aplicado na seção que conta a historia da academia, os boto~es com experiencia de profundidade, e 
+o formulario de contato, que marca uma aula experimental na academia.
+**OBS: O formulario nâo esta 100% funcional pois não esta direcionado a nenhum banco de dados, ou seja, não é mandado nenhuma informação posta nele para a academia. 
+Mas o mesmo esta funcionando se for posto para teste de design.**
 
-### :link: Links
+## :link: Links
+[Click aqui para ver o Site](https://pedrodabahia.github.io/Espaco_Fit/)
 
-### :framed_picture: Screenshots
+## :framed_picture: Screenshots
+<img src="./screen/screenshot.png">
 
-### :wrench: Tecnologias Ultilizadas
+## :wrench: Tecnologias Ultilizadas
 
-### :soon: Implementação futura
+## :soon: Implementação futura
 
-### :dart: Status do Projeto
-
+## :dart: Status do Projeto
+:orange_circle: Em andamento
