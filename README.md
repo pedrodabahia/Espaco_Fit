@@ -22,8 +22,8 @@ Mas o mesmo esta funcionando se for posto para teste de design.**
 
 <p float="left">
   <img src="./screen/screenshot.png">
-  <img  height="200" src="./screen/screenshot_mobile.png">
-  <img height="200" width="250" src="./screen/screenshot_notebook.png">
+  <img  height="100" src="./screen/screenshot_mobile.png">
+  <img height="100" width="250" src="./screen/screenshot_notebook.png">
 </p>
 
 
