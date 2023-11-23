@@ -19,9 +19,13 @@ Mas o mesmo esta funcionando se for posto para teste de design.**
 [Click aqui para ver o Site](https://pedrodabahia.github.io/Espaco_Fit/)
 
 ## :framed_picture: Screenshots
-<img src="./screen/screenshot.png">
-<img src="./screen/screenshot_mobile.png">
-<img src="./screen/screenshot_notebook.png">
+
+<p float="left">
+  <img src="./screen/screenshot.png">
+  <img  height="400" src="./screen/screenshot_mobile.png">
+  <img height="400" src="./screen/screenshot_notebook.png">
+</p>
+
 
 ## :wrench: Tecnologias Ultilizadas
 Foram Ultilizades teconologias base de desenvolvimento front-end, são elas:
