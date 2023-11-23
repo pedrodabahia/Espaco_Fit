@@ -22,8 +22,15 @@ Mas o mesmo esta funcionando se for posto para teste de design.**
 <img src="./screen/screenshot.png">
 
 ## :wrench: Tecnologias Ultilizadas
+Foram Ultilizades teconologias base de desenvolvimento front-end, são elas:
++ HTML5
++ CSS3
++ Javascript
++ Jquery
 
 ## :soon: Implementação futura
+Sobre implementações futuras?
+Pretendo implementar no site o banco de dados, para que fique 100% funcional, e tambem tecnologias como react e eletron, para que tem um diferencial :wink:
 
 ## :dart: Status do Projeto
 :orange_circle: Em andamento
