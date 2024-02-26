@@ -42,7 +42,7 @@ let data= {
 }
 
 
-$('#buttonInscrever').click(function(){
+$('#buttonInsc').click(function(){
  console.log("CLICOU")
 
 fetch("https://pedrodabahia.github.io/Espaco_Fit/js/bd.json",{
