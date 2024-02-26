@@ -49,7 +49,7 @@ fetch("https://pedrodabahia.github.io/Espaco_Fit/js/bd.json",{
     method: 'POST',
     headers: {
         "Content-Type" : "application/json",
-    },body: data
+    },body: JSON.stringify(data)
 }).then(resp => resp.json()).then(data => {
     console.log(data)
 }).catch(err => console.log(err))
