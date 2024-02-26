@@ -45,7 +45,7 @@ let data= {
 $('#buttonInscrever').click(function(){
  console.log("CLICOU")
 
-fetch("file:///home/pedrohsmatos/Downloads/Espaco_Fit-main/js/bd.json",{
+fetch("https://pedrodabahia.github.io/Espaco_Fit/js/bd.json",{
     method: 'POST',
     headers: {
         "Content-Type" : "application/json",
