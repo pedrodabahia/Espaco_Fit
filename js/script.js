@@ -25,8 +25,6 @@ $(function(){
    
 
     function playSlider(cont){
-         console.log(cont)
-         console.log($('.imagem').length)
          $('.slide-Historia .content').css('width', $('.imagem').width() * $('.imagem').length)
         //FUNCTION QUE FAZ A TROCA DE IMAGENS NO SLIDE
         var imagemVisible =  $('.imagem').eq(cont).offset().left - $('.slide-Historia .content').offset().left;
@@ -38,6 +36,29 @@ $(function(){
             contadorSlider();
             playSlider();
     }
-    
-    slider()
+
+let data= {
+    name:'samy'
+}
+
+
+$('#buttonInscrever').click(function(){
+ console.log("CLICOU")
+
+fetch("file:///home/pedrohsmatos/Downloads/Espaco_Fit-main/js/bd.json",{
+    method: 'POST',
+    headers: {
+        "Content-Type" : "application/json",
+    },body: data
+}).then(resp => resp.json()).then(data => {
+    console.log(data)
+}).catch(err => console.log(err))
+
 })
+    
+    slider();
+
+
+})
+
+
