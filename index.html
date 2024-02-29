@@ -1,7 +1,8 @@
 <!Doctype html>  
 <html>
   <head>    
-  <meta name="viewport" content="width=device-width,initial-scale= 1.0, maximum-scale= 1.0"
+  <meta name="viewport" content="width=device-width,initial-scale= 1.0, maximum-scale= 1.0">
+  <meta charset="utf-8">
   <link rel="icon" type="img/png" href="./img/IMG-4923.png" >
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Academia Espaço Fit</title>
@@ -17,7 +18,7 @@
           
           <div class="inscreva-se">
             <h1>SEJA SEU MELHOR</h1>
-            <button id="buttonInsc">Inscreva-se hoje</button>
+            <button>Inscreva-se hoje</button>
           </div>
         
         </header><!--banner inicial-->
@@ -176,11 +177,11 @@
                     aula experimental totalmente gratuita!! </p>
               </div>
 
-              <form class="form-aula">
+              <form class="form-aula" method="post" action="script.php" >
                 <h2>Marque o dia da sua visita aqui</h2>
                 
                 <div class="input-aula">
-                  <label>Nome*</label>
+                  <label>Nome e Sobrenome*</label>
                   <input type="text" minlength="3" name="nome" placeholder="Seu nome aqui" required>
                 </div>
 
@@ -196,12 +197,12 @@
 
                 <div class="input-aula data">
                   <label>Data da Visita*</label>
-                  <input type="date" name="nome" placeholder="Seu nome aqui" required>
+                  <input type="date" name="data" required>
                 </div>
 
                 <div class="input-aula">
                   <label>Modalidade*</label>
-                  <select required>
+                  <select name="modalidade" required>
                     <option disabled>modalidade</option>
                     <option>Musculação</option>
                     <option>Muay Thai</option>
